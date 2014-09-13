@@ -52,7 +52,6 @@
 }
 
 -(void)getUserInfo{
-    NSLog(@"get user info");
     NSString *requestPath = @"me/?fields=name,location,gender,birthday,relationship_status,picture,email,id";
     
     FBRequest *request = [[FBRequest alloc] initWithSession:[PFFacebookUtils session] graphPath:requestPath];

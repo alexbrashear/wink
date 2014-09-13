@@ -44,7 +44,7 @@
                 chat.sender = [dialog objectForKey:@"sender"];
                 chat.senderId = [dialog objectForKey:@"senderId"];
                 chat.recipientId = [dialog objectForKey:@"recipientId"];
-                chat.createdAt = [dialog objectForKey:@"createdAt"];
+                chat.createdAt = dialog.createdAt;
                 chat.messageId = dialog.objectId;
                 chat.combinedId = [NSString stringWithFormat:@"%@%@", chat.senderId, chat.recipientId];
                 checkString1 = chat.combinedId;

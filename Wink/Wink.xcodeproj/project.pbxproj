@@ -59,6 +59,8 @@
 		B3DC9C0719C433EE0066DAC0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0619C433ED0066DAC0 /* OpenGLES.framework */; };
 		B3DC9C0B19C434690066DAC0 /* MoxtraConversationSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0A19C434690066DAC0 /* MoxtraConversationSDK */; };
 		B3DC9C1619C44DA20066DAC0 /* PlaceTheyChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9C1519C44DA20066DAC0 /* PlaceTheyChatTableViewCell.m */; };
+		B3DC9C1919C476190066DAC0 /* PotentialMatchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9C1819C476190066DAC0 /* PotentialMatchTableViewCell.m */; };
+		B3DC9C1C19C4796B0066DAC0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9C1B19C4796B0066DAC0 /* User.m */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
 		C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3142419C4073E00D2B4CD /* TestViewController.m */; };
@@ -141,6 +143,10 @@
 		B3DC9C0D19C434AF0066DAC0 /* MXClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXClient.h; sourceTree = "<group>"; };
 		B3DC9C1419C44DA20066DAC0 /* PlaceTheyChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceTheyChatTableViewCell.h; sourceTree = "<group>"; };
 		B3DC9C1519C44DA20066DAC0 /* PlaceTheyChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceTheyChatTableViewCell.m; sourceTree = "<group>"; };
+		B3DC9C1719C476190066DAC0 /* PotentialMatchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotentialMatchTableViewCell.h; sourceTree = "<group>"; };
+		B3DC9C1819C476190066DAC0 /* PotentialMatchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PotentialMatchTableViewCell.m; sourceTree = "<group>"; };
+		B3DC9C1A19C4796B0066DAC0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B3DC9C1B19C4796B0066DAC0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C3867BC319C3DC4D009678B1 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		C3867BC419C3DC4D009678B1 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		C3867BC919C3DD01009678B1 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
@@ -301,6 +307,8 @@
 				B3DC9BD919C407DA0066DAC0 /* ChatTableViewCell.m */,
 				B3DC9C1419C44DA20066DAC0 /* PlaceTheyChatTableViewCell.h */,
 				B3DC9C1519C44DA20066DAC0 /* PlaceTheyChatTableViewCell.m */,
+				B3DC9C1719C476190066DAC0 /* PotentialMatchTableViewCell.h */,
+				B3DC9C1819C476190066DAC0 /* PotentialMatchTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -310,6 +318,8 @@
 			children = (
 				B3DC9BDC19C40AE30066DAC0 /* Message.h */,
 				B3DC9BDD19C40AE30066DAC0 /* Message.m */,
+				B3DC9C1A19C4796B0066DAC0 /* User.h */,
+				B3DC9C1B19C4796B0066DAC0 /* User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -501,11 +511,13 @@
 				B3DC9BD319C3F3B70066DAC0 /* EditViewController.m in Sources */,
 				B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */,
 				B34FEA7219C3BC1200886727 /* WelcomeViewController.m in Sources */,
+				B3DC9C1C19C4796B0066DAC0 /* User.m in Sources */,
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
 				B3DC9BDA19C407DA0066DAC0 /* ChatTableViewCell.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
 				C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */,
+				B3DC9C1919C476190066DAC0 /* PotentialMatchTableViewCell.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
 				B3DC9BDE19C40AE30066DAC0 /* Message.m in Sources */,
 				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,

@@ -14,7 +14,7 @@
 @property NSString *recipient;
 @property NSString *senderId;
 @property NSString *recipientId;
-@property NSString *createdAt;
+@property NSDate *createdAt;
 @property NSString *messageId;
 @property NSString *combinedId;
 @end
