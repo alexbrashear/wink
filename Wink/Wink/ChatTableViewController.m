@@ -7,94 +7,126 @@
 //
 
 #import "ChatTableViewController.h"
+#import "LocalStorageService.h"
+#import <SVProgressHUD.h>
+#import "UserChatTableViewController.h"
+#define kShowNewChatViewControllerSegue @"ShowNewChatViewControllerSegue"
+#define kShowChatViewControllerSegue @"ShowChatViewControllerSegue"
 
-@interface ChatTableViewController ()
+@interface ChatTableViewController () <QBActionStatusDelegate>
+@property (nonatomic, strong) NSMutableArray *dialogs;
 
 @end
 
 @implementation ChatTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    if([LocalStorageService shared].currentUser != nil){
+        [SVProgressHUD show];
+        
+        // get dialogs
+        [QBChat dialogsWithExtendedRequest:nil delegate:self];
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    if(self.createdDialog != nil){
+        [self performSegueWithIdentifier:kShowNewChatViewControllerSegue sender:nil];
+    }
+}
+
+#pragma mark
+#pragma mark Storyboard
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.destinationViewController isKindOfClass:UserChatTableViewController.class]){
+        UserChatTableViewController *destinationViewController = (UserChatTableViewController *)segue.destinationViewController;
+        
+        if(self.createdDialog != nil){
+            destinationViewController.dialog = self.createdDialog;
+            self.createdDialog = nil;
+        }else{
+            QBChatDialog *dialog = self.dialogs[((UITableViewCell *)sender).tag];
+            destinationViewController.dialog = dialog;
+        }
+    }
+}
+
+
+#pragma mark
+#pragma mark UITableViewDelegate & UITableViewDataSource
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.dialogs count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChatRoomCellIdentifier"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    QBChatDialog *chatDialog = self.dialogs[indexPath.row];
+    cell.tag  = indexPath.row;
     
-    // Configure the cell...
+    switch (chatDialog.type) {
+        case QBChatDialogTypePrivate:{
+            cell.detailTextLabel.text = @"private";
+            QBUUser *recipient = [LocalStorageService shared].usersAsDictionary[@(chatDialog.recipientID)];
+            cell.textLabel.text = recipient.login == nil ? recipient.email : recipient.login;
+        }
+            break;
+        case QBChatDialogTypeGroup:{
+            cell.detailTextLabel.text = @"group";
+            cell.textLabel.text = chatDialog.name;
+        }
+            break;
+        case QBChatDialogTypePublicGroup:{
+            cell.detailTextLabel.text = @"public group";
+            cell.textLabel.text = chatDialog.name;
+        }
+            break;
+            
+        default:
+            break;
+    }
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+
+#pragma mark -
+#pragma mark QBActionStatusDelegate
+
+// QuickBlox API queries delegate
+- (void)completedWithResult:(Result *)result{
+    if (result.success && [result isKindOfClass:[QBDialogsPagedResult class]]) {
+        QBDialogsPagedResult *pagedResult = (QBDialogsPagedResult *)result;
+        //
+        NSArray *dialogs = pagedResult.dialogs;
+        self.dialogs = [dialogs mutableCopy];
+        
+        QBGeneralResponsePage *pagedRequest = [QBGeneralResponsePage responsePageWithCurrentPage:0 perPage:100];
+        //
+        NSSet *dialogsUsersIDs = pagedResult.dialogsUsersIDs;
+        //
+        [QBRequest usersWithIDs:[dialogsUsersIDs allObjects] page:pagedRequest successBlock:^(QBResponse *response, QBGeneralResponsePage *page, NSArray *users) {
+            
+            [LocalStorageService shared].users = users;
+            //
+            [self.tableView reloadData];
+            [SVProgressHUD dismiss];
+            
+        } errorBlock:nil];
+        
+    }
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

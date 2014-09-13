@@ -11,6 +11,7 @@
 #import "WConstants.h"
 #import <AFNetworking.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
+#import <Quickblox/Quickblox.h>
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -34,6 +35,11 @@
      UIRemoteNotificationTypeBadge |
      UIRemoteNotificationTypeAlert |
      UIRemoteNotificationTypeSound];
+    
+    [QBApplication sharedApplication].applicationId = 92;
+    [QBConnection registerServiceKey:@"wJHdOcQSxXQGWx5"];
+    [QBConnection registerServiceSecret:@"BTFsj7Rtt27DAmT"];
+    [QBSettings setAccountKey:@"VXf6oqi6mzh9KWup7KY8"];
     
     if ([PFUser currentUser]){
         /*

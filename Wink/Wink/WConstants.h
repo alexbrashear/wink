@@ -11,5 +11,5 @@
 
 extern NSString * const PARSE_APPLICATION_ID;
 extern NSString * const PARSE_CLIENT_KEY;
-
+extern NSString * const HIPMOB_KEY;
 #endif
