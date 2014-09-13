@@ -18,12 +18,23 @@
     chat[@"senderId"] = self.potentialMatchId;
     chat[@"recipientId"] = [[PFUser currentUser] objectId];
     [chat saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
+        [self push];
         [self removePotentialFromArray];
     }];
     
 }
 - (IBAction)no:(id)sender {
     [self removePotentialFromArray];
+}
+
+-(void)push{
+    PFQuery *pushQuery = [PFInstallation query];
+    [pushQuery whereKey:@"userId" equalTo:self.potentialMatchId];
+    // Send push notification to query
+    PFPush *push = [[PFPush alloc] init];
+    [push setQuery:pushQuery]; // Set our Installation query
+    [push setMessage:[NSString stringWithFormat:@"You've got a match!"]];
+    [push sendPushInBackground];
 }
 
 -(void)removePotentialFromArray{
