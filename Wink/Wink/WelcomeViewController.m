@@ -66,8 +66,9 @@
             // get the FB user's profile image
             NSDictionary *dicFacebookPicture = [userData objectForKey:@"picture"];
             NSDictionary *dicFacebookData = [dicFacebookPicture objectForKey:@"data"];
-            NSString *sUrlPic= [dicFacebookData objectForKey:@"url"];
             /*
+            NSString *sUrlPic= [dicFacebookData objectForKey:@"url"];
+            
             UIImage* imgProfile = [UIImage imageWithData:
                                    [NSData dataWithContentsOfURL:
                                     [NSURL URLWithString: sUrlPic]]];
