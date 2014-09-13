@@ -63,6 +63,7 @@
 -(void)setupPic:(UIImage *)pic{
     NSLog(@"pic: %@", pic);
     self.profileImageView.image = pic;
+    self.profileImageView.clipsToBounds = YES;
     self.profileImageView.layer.borderWidth = 1.0f;
     self.profileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
     self.profileImageView.layer.cornerRadius = 50.0f;
