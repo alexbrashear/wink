@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, "7.0"
+
+target "Wink" do
+pod 'Facebook-iOS-SDK', '~> 3.17.0'
+pod 'HockeySDK', '~> 3.5.7'
+#pod 'Parse-iOS', '~> 1.3.0'
+#pod 'ParseFacebookUtils', '~> 1.3.0'
+#pod 'Parse-iOS-SDK', '~> 1.2.21'
+pod 'SVProgressHUD', '~> 1.0'
+pod 'AFNetworking', '~> 2.4.1'
+
+end
+
+target "WinkTests" do
+
+end
+
