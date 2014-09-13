@@ -73,12 +73,14 @@
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "WinkSplashScreen02-4.png",
       "scale" : "1x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "WinkSplashScreen02-3.png",
       "scale" : "2x"
     },
     {

@@ -39,6 +39,25 @@
 		B3DC9BD619C406770066DAC0 /* PlaceTheyChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BD519C406770066DAC0 /* PlaceTheyChatTableViewController.m */; };
 		B3DC9BDA19C407DA0066DAC0 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BD919C407DA0066DAC0 /* ChatTableViewCell.m */; };
 		B3DC9BDE19C40AE30066DAC0 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BDD19C40AE30066DAC0 /* Message.m */; };
+		B3DC9BE519C433760066DAC0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BE419C433760066DAC0 /* libc++.dylib */; };
+		B3DC9BE719C4337D0066DAC0 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BE619C4337D0066DAC0 /* libstdc++.6.dylib */; };
+		B3DC9BE919C433820066DAC0 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BE819C433820066DAC0 /* libxml2.2.dylib */; };
+		B3DC9BEB19C4338C0066DAC0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BEA19C4338C0066DAC0 /* Accelerate.framework */; };
+		B3DC9BEE19C433930066DAC0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BEC19C433930066DAC0 /* AddressBook.framework */; };
+		B3DC9BEF19C433930066DAC0 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BED19C433930066DAC0 /* AddressBookUI.framework */; };
+		B3DC9BF119C433980066DAC0 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BF019C433980066DAC0 /* AssetsLibrary.framework */; };
+		B3DC9BF319C433A20066DAC0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BF219C433A20066DAC0 /* AVFoundation.framework */; };
+		B3DC9BF519C433AD0066DAC0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BF419C433AD0066DAC0 /* CoreFoundation.framework */; };
+		B3DC9BF719C433B60066DAC0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BF619C433B60066DAC0 /* CoreImage.framework */; };
+		B3DC9BF919C433BD0066DAC0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BF819C433BD0066DAC0 /* CoreMedia.framework */; };
+		B3DC9BFB19C433C70066DAC0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BFA19C433C70066DAC0 /* CoreVideo.framework */; };
+		B3DC9BFD19C433D10066DAC0 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BFC19C433D10066DAC0 /* EventKit.framework */; };
+		B3DC9BFF19C433D70066DAC0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BFE19C433D70066DAC0 /* ImageIO.framework */; };
+		B3DC9C0119C433DB0066DAC0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0019C433DB0066DAC0 /* MapKit.framework */; };
+		B3DC9C0319C433E00066DAC0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0219C433E00066DAC0 /* MediaPlayer.framework */; };
+		B3DC9C0519C433E40066DAC0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0419C433E40066DAC0 /* MessageUI.framework */; };
+		B3DC9C0719C433EE0066DAC0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0619C433ED0066DAC0 /* OpenGLES.framework */; };
+		B3DC9C0B19C434690066DAC0 /* MoxtraConversationSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0A19C434690066DAC0 /* MoxtraConversationSDK */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
 		C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3142419C4073E00D2B4CD /* TestViewController.m */; };
@@ -98,6 +117,27 @@
 		B3DC9BD919C407DA0066DAC0 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
 		B3DC9BDC19C40AE30066DAC0 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		B3DC9BDD19C40AE30066DAC0 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		B3DC9BE419C433760066DAC0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		B3DC9BE619C4337D0066DAC0 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		B3DC9BE819C433820066DAC0 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		B3DC9BEA19C4338C0066DAC0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B3DC9BEC19C433930066DAC0 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B3DC9BED19C433930066DAC0 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		B3DC9BF019C433980066DAC0 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B3DC9BF219C433A20066DAC0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B3DC9BF419C433AD0066DAC0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B3DC9BF619C433B60066DAC0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B3DC9BF819C433BD0066DAC0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B3DC9BFA19C433C70066DAC0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B3DC9BFC19C433D10066DAC0 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		B3DC9BFE19C433D70066DAC0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B3DC9C0019C433DB0066DAC0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B3DC9C0219C433E00066DAC0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B3DC9C0419C433E40066DAC0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B3DC9C0619C433ED0066DAC0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B3DC9C0A19C434690066DAC0 /* MoxtraConversationSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = MoxtraConversationSDK; sourceTree = "<group>"; };
+		B3DC9C0C19C434AF0066DAC0 /* Moxtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Moxtra.h; sourceTree = "<group>"; };
+		B3DC9C0D19C434AF0066DAC0 /* MXClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXClient.h; sourceTree = "<group>"; };
 		C3867BC319C3DC4D009678B1 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		C3867BC419C3DC4D009678B1 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		C3867BC919C3DD01009678B1 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
@@ -114,23 +154,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DC9C0719C433EE0066DAC0 /* OpenGLES.framework in Frameworks */,
+				B38AD39419C3C09700EF0C8E /* MobileCoreServices.framework in Frameworks */,
+				B3DC9C0519C433E40066DAC0 /* MessageUI.framework in Frameworks */,
+				B3DC9C0319C433E00066DAC0 /* MediaPlayer.framework in Frameworks */,
+				B3DC9C0119C433DB0066DAC0 /* MapKit.framework in Frameworks */,
+				B3DC9BFF19C433D70066DAC0 /* ImageIO.framework in Frameworks */,
+				B3DC9BFD19C433D10066DAC0 /* EventKit.framework in Frameworks */,
+				B3DC9BFB19C433C70066DAC0 /* CoreVideo.framework in Frameworks */,
+				B38AD39E19C3C0D800EF0C8E /* CoreText.framework in Frameworks */,
+				B3DC9BF919C433BD0066DAC0 /* CoreMedia.framework in Frameworks */,
+				B38AD39019C3C08B00EF0C8E /* CoreLocation.framework in Frameworks */,
+				B3DC9BF719C433B60066DAC0 /* CoreImage.framework in Frameworks */,
+				B38AD38E19C3C08600EF0C8E /* CoreGraphics.framework in Frameworks */,
+				B3DC9BF519C433AD0066DAC0 /* CoreFoundation.framework in Frameworks */,
+				B3DC9BF319C433A20066DAC0 /* AVFoundation.framework in Frameworks */,
+				B38AD38A19C3C07D00EF0C8E /* AudioToolbox.framework in Frameworks */,
+				B3DC9BF119C433980066DAC0 /* AssetsLibrary.framework in Frameworks */,
+				B3DC9BEE19C433930066DAC0 /* AddressBook.framework in Frameworks */,
+				B3DC9BEF19C433930066DAC0 /* AddressBookUI.framework in Frameworks */,
+				B3DC9BEB19C4338C0066DAC0 /* Accelerate.framework in Frameworks */,
+				B38AD39219C3C09000EF0C8E /* libz.dylib in Frameworks */,
+				B3DC9C0B19C434690066DAC0 /* MoxtraConversationSDK in Frameworks */,
+				B3DC9BE919C433820066DAC0 /* libxml2.2.dylib in Frameworks */,
+				B3DC9BE719C4337D0066DAC0 /* libstdc++.6.dylib in Frameworks */,
+				B3DC9BE519C433760066DAC0 /* libc++.dylib in Frameworks */,
 				B3DC9BB619C3E2A50066DAC0 /* CoreTelephony.framework in Frameworks */,
 				B3DC9BB419C3E2A00066DAC0 /* libicucore.dylib in Frameworks */,
 				B3DC9BB219C3DFFE0066DAC0 /* CoreBluetooth.framework in Frameworks */,
 				B38AD3A219C3C0EB00EF0C8E /* UIKit.framework in Frameworks */,
 				B38AD39C19C3C0A800EF0C8E /* SystemConfiguration.framework in Frameworks */,
 				B38AD3A019C3C0E000EF0C8E /* Foundation.framework in Frameworks */,
-				B38AD39E19C3C0D800EF0C8E /* CoreText.framework in Frameworks */,
 				B38AD3A519C3C28E00EF0C8E /* Parse.framework in Frameworks */,
 				B38AD39A19C3C0A400EF0C8E /* StoreKit.framework in Frameworks */,
 				B38AD39819C3C0A000EF0C8E /* Security.framework in Frameworks */,
 				B38AD39619C3C09B00EF0C8E /* QuartzCore.framework in Frameworks */,
-				B38AD39419C3C09700EF0C8E /* MobileCoreServices.framework in Frameworks */,
-				B38AD39219C3C09000EF0C8E /* libz.dylib in Frameworks */,
-				B38AD39019C3C08B00EF0C8E /* CoreLocation.framework in Frameworks */,
-				B38AD38E19C3C08600EF0C8E /* CoreGraphics.framework in Frameworks */,
 				B38AD38C19C3C08200EF0C8E /* CFNetwork.framework in Frameworks */,
-				B38AD38A19C3C07D00EF0C8E /* AudioToolbox.framework in Frameworks */,
 				B38AD3A619C3C28E00EF0C8E /* ParseFacebookUtils.framework in Frameworks */,
 				166449808C18490E805FEFB2 /* libPods-Wink.a in Frameworks */,
 			);
@@ -253,6 +312,27 @@
 		BEE5AEB9AE504FAEA5E99A2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3DC9C0C19C434AF0066DAC0 /* Moxtra.h */,
+				B3DC9C0D19C434AF0066DAC0 /* MXClient.h */,
+				B3DC9C0A19C434690066DAC0 /* MoxtraConversationSDK */,
+				B3DC9C0619C433ED0066DAC0 /* OpenGLES.framework */,
+				B3DC9C0419C433E40066DAC0 /* MessageUI.framework */,
+				B3DC9C0219C433E00066DAC0 /* MediaPlayer.framework */,
+				B3DC9C0019C433DB0066DAC0 /* MapKit.framework */,
+				B3DC9BFE19C433D70066DAC0 /* ImageIO.framework */,
+				B3DC9BFC19C433D10066DAC0 /* EventKit.framework */,
+				B3DC9BFA19C433C70066DAC0 /* CoreVideo.framework */,
+				B3DC9BF819C433BD0066DAC0 /* CoreMedia.framework */,
+				B3DC9BF619C433B60066DAC0 /* CoreImage.framework */,
+				B3DC9BF419C433AD0066DAC0 /* CoreFoundation.framework */,
+				B3DC9BF219C433A20066DAC0 /* AVFoundation.framework */,
+				B3DC9BF019C433980066DAC0 /* AssetsLibrary.framework */,
+				B3DC9BEC19C433930066DAC0 /* AddressBook.framework */,
+				B3DC9BED19C433930066DAC0 /* AddressBookUI.framework */,
+				B3DC9BEA19C4338C0066DAC0 /* Accelerate.framework */,
+				B3DC9BE819C433820066DAC0 /* libxml2.2.dylib */,
+				B3DC9BE619C4337D0066DAC0 /* libstdc++.6.dylib */,
+				B3DC9BE419C433760066DAC0 /* libc++.dylib */,
 				B3DC9BB519C3E2A50066DAC0 /* CoreTelephony.framework */,
 				B3DC9BB319C3E2A00066DAC0 /* libicucore.dylib */,
 				B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */,
@@ -547,6 +627,10 @@
 				INFOPLIST_FILE = Wink/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "69fac5e1-3393-4af5-ac2c-293493adf556";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -568,6 +652,10 @@
 				INFOPLIST_FILE = Wink/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "69fac5e1-3393-4af5-ac2c-293493adf556";
 				TARGETED_DEVICE_FAMILY = 1;

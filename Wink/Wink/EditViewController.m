@@ -9,7 +9,7 @@
 #import "EditViewController.h"
 #import <Parse/Parse.h>
 @interface EditViewController ()
-@property (strong, nonatomic) IBOutlet PFImageView *profileImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *profileImageView;
 
 @end
 
@@ -26,13 +26,11 @@
     [picQuery getFirstObjectInBackgroundWithBlock:^(PFObject *user, NSError *error)
      {
          if (!error){
-             NSLog(@"no error 1");
              PFFile *userImageFile = user[@"profPic"];
              [userImageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
-                 if (!error){
-                     NSLog(@"no error 2");
+                 if (!error)
                      [self setupPic:[UIImage imageWithData:imageData]];
-                 }
+                 
                  else
                      NSLog(@"Error: %@", error.description);
                  
@@ -46,11 +44,12 @@
 }
 
 -(void)setupPic:(UIImage *)pic{
+    NSLog(@"pic: %@", pic);
     self.profileImageView.image = pic;
-    self.profileImageView.layer.borderWidth = 3.0f;
+    self.profileImageView.layer.borderWidth = 1.0f;
     self.profileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.profileImageView.layer.cornerRadius = 10.0f;
-
+    self.profileImageView.layer.cornerRadius = 50.0f;
+    [self.profileImageView setNeedsLayout];
 }
 
 - (void)didReceiveMemoryWarning {
