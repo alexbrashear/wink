@@ -82,7 +82,7 @@
             [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (succeeded) {
                     [SVProgressHUD dismiss];
-                    
+                    [self performSegueWithIdentifier:@"toMain" sender:self];
                 } else {
                     [SVProgressHUD dismiss];
                     NSLog(@"fml: %@", error);
