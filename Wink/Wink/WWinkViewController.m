@@ -47,10 +47,13 @@
      {
          if (!error){
              NSMutableArray *potentialMatches = [[NSMutableArray alloc] init];
-             for (PFObject *user in userArray)
-                 [potentialMatches addObject:user.objectId];
+             for (PFObject *user in userArray){
+                 if (![user.objectId isEqualToString:[[PFUser currentUser] objectId]])
+                     [potentialMatches addObject:user.objectId];
+             }
              PFUser *user = [PFUser currentUser];
              user[@"potentialMatches"] = potentialMatches;
+             [user saveInBackground];
          }
     
          else
