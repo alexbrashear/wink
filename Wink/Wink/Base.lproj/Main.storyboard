@@ -110,7 +110,7 @@
                             <outlet property="delegate" destination="2aL-Ys-hHu" id="6Ri-Sy-jCf"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="05O-29-jBm"/>
+                    <tabBarItem key="tabBarItem" image="ChatButton" selectedImage="ChatButton" id="05O-29-jBm"/>
                     <navigationItem key="navigationItem" id="WWk-FB-6c3"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
@@ -254,9 +254,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-9a-61m">
-                                <rect key="frame" x="143" y="225" width="34" height="30"/>
-                                <state key="normal" title="Wink">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-9a-61m">
+                                <rect key="frame" x="110" y="190" width="100" height="100"/>
+                                <state key="normal" image="WinkButton01">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -266,7 +266,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="rz6-C2-doB"/>
+                    <tabBarItem key="tabBarItem" title="" image="Wink01wink" id="rz6-C2-doB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31t-Pm-UF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -376,6 +376,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ChatButton" width="40" height="40"/>
+        <image name="Wink01wink" width="31" height="31"/>
+        <image name="WinkButton01" width="215" height="214"/>
         <image name="WinkLoginButton" width="374" height="73"/>
         <image name="WinkNoButton" width="71" height="72"/>
         <image name="WinkYesButton" width="71" height="71"/>
