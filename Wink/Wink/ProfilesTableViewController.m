@@ -22,6 +22,7 @@
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(retrievePotentials) name:@"retrievePotentials" object:nil];
     self.potentialMatches = [[NSMutableArray alloc] init];
+    self.potentialsInfo = [[NSMutableArray alloc] init];
     [self retrievePotentials];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -36,7 +37,6 @@
 }
 
 -(void)retrievePotentials{
-    NSLog(@"retrieving");
     PFQuery *potentialsQuery = [PFUser query];
     [potentialsQuery whereKey:@"objectId" equalTo:[[PFUser currentUser]objectId]];
     [potentialsQuery getFirstObjectInBackgroundWithBlock:^(PFObject *user, NSError *error)
@@ -62,9 +62,19 @@
                  User *user = [[User alloc] init];
                  user.objectId = pfuser.objectId;
                  user.fbID = [pfuser objectForKey:@"fbID"];
-                 [self.potentialsInfo addObject:user.objectId];
+                 [self.potentialsInfo addObject:user];
+
+                NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+                NSURL *profilePictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=small", user.fbID]];
+                NSURLRequest *urlrequest = [[NSURLRequest alloc] initWithURL:profilePictureURL];
+                     [NSURLConnection sendAsynchronousRequest:urlrequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                         
+                         UIImage *profPic = [UIImage imageWithData:data];
+                         user.profPic = profPic;
+                         [self.tableView reloadData];
+
+                     }];
              }
-             [self.tableView reloadData];
          }
          else
              NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -81,7 +91,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    NSLog(@"count: %i", self.potentialMatches.count);
     return self.potentialMatches.count;
 }
 
@@ -96,7 +105,8 @@
 
     User *user = [self.potentialsInfo objectAtIndex:indexPath.row];
     cell.potentialMatchId = user.objectId;
-    
+    cell.imageView.image = user.profPic;
+    [cell setNeedsLayout];
     return cell;
 }
 

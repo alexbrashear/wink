@@ -9,7 +9,7 @@
 #import "PotentialMatchTableViewCell.h"
 #import <Parse/Parse.h>
 @implementation PotentialMatchTableViewCell
-
+@synthesize imageView;
 - (void)awakeFromNib {
     // Initialization code
 }

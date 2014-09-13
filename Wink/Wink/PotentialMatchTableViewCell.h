@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PotentialMatchTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (readwrite, nonatomic) IBOutlet UIImageView *imageView;
 @property NSString *potentialMatchId;
 
 @end

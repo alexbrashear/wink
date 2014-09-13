@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 @interface User : NSObject
 @property NSString *objectId;
 @property NSString *fbID;
+@property UIImage *profPic;
 @end
