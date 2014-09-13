@@ -21,7 +21,6 @@
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(retrievePotentials) name:@"retrievePotentials" object:nil];
-    
     self.potentialMatches = [[NSMutableArray alloc] init];
     [self retrievePotentials];
     // Uncomment the following line to preserve selection between presentations.
@@ -37,11 +36,13 @@
 }
 
 -(void)retrievePotentials{
+    NSLog(@"retrieving");
     PFQuery *potentialsQuery = [PFUser query];
     [potentialsQuery whereKey:@"objectId" equalTo:[[PFUser currentUser]objectId]];
     [potentialsQuery getFirstObjectInBackgroundWithBlock:^(PFObject *user, NSError *error)
      {
          if (!error){
+             NSLog(@"potentials, so they say: %@", [user objectForKey:@"potentialMatches"]);
              self.potentialMatches = [user objectForKey:@"potentialMatches"];
              [self retrievePotentialsInfo];
          }
@@ -60,9 +61,10 @@
              for (PFObject *pfuser in users){
                  User *user = [[User alloc] init];
                  user.objectId = pfuser.objectId;
+                 user.fbID = [pfuser objectForKey:@"fbID"];
                  [self.potentialsInfo addObject:user.objectId];
              }
-                 
+             [self.tableView reloadData];
          }
          else
              NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -79,6 +81,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
+    NSLog(@"count: %i", self.potentialMatches.count);
     return self.potentialMatches.count;
 }
 

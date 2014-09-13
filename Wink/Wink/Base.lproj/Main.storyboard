@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -18,9 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ1-aI-GBP">
-                                <rect key="frame" x="79" y="225" width="163" height="30"/>
-                                <state key="normal" title="Connect with Facebook">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ1-aI-GBP">
+                                <rect key="frame" x="0.0" y="204" width="320" height="50"/>
+                                <state key="normal" image="WinkLoginButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -31,7 +30,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uQ1-aI-GBP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ZA0-Dl-Paw"/>
-                            <constraint firstItem="uQ1-aI-GBP" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="swh-Rh-yJU"/>
+                            <constraint firstItem="uQ1-aI-GBP" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-11" id="swh-Rh-yJU"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -235,7 +234,7 @@
                         <segue destination="2li-mh-YA1" kind="relationship" relationship="viewControllers" id="Vao-Bg-Rgm"/>
                         <segue destination="YYS-gd-2du" kind="relationship" relationship="viewControllers" id="o7w-Hr-u69"/>
                         <segue destination="NeS-Iu-bms" kind="relationship" relationship="viewControllers" id="EAV-1e-X0P"/>
-                        <segue destination="WcB-qg-rxl" kind="relationship" relationship="viewControllers" id="01w-4a-t0r"/>
+                        <segue destination="mAj-GA-4hr" kind="relationship" relationship="viewControllers" id="Rwq-MG-swS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZN-h3-LKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,10 +272,28 @@
             </objects>
             <point key="canvasLocation" x="1551" y="136"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="yCA-TL-Gqu">
+            <objects>
+                <navigationController id="mAj-GA-4hr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="qLW-0V-9qD"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9av-mA-kPH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WcB-qg-rxl" kind="relationship" relationship="rootViewController" id="CXc-gL-YJ8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIl-om-Wwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="678"/>
+        </scene>
+        <!--Profiles Table View Controller-->
         <scene sceneID="r5L-ex-a8o">
             <objects>
-                <tableViewController id="WcB-qg-rxl" sceneMemberID="viewController">
+                <tableViewController id="WcB-qg-rxl" customClass="ProfilesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="22" sectionFooterHeight="22" id="wJK-PV-NVM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,22 +307,22 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beP-AT-VTo">
                                             <rect key="frame" x="120" y="0.0" width="80" height="80"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-Rf-qgL">
-                                            <rect key="frame" x="266" y="25" width="46" height="30"/>
-                                            <state key="normal" title="YES">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="yes:" destination="Xzt-ap-GbB" eventType="touchUpInside" id="1w1-yM-W5C"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1g-wy-dqZ">
-                                            <rect key="frame" x="8" y="25" width="30" height="30"/>
-                                            <state key="normal" title="NO">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1g-wy-dqZ">
+                                            <rect key="frame" x="8" y="10" width="60" height="60"/>
+                                            <state key="normal" image="WinkNoButton">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
                                                 <action selector="no:" destination="Xzt-ap-GbB" eventType="touchUpInside" id="uwQ-eT-WCV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-Rf-qgL">
+                                            <rect key="frame" x="252" y="10" width="60" height="60"/>
+                                            <state key="normal" image="WinkYesButton">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="yes:" destination="Xzt-ap-GbB" eventType="touchUpInside" id="1w1-yM-W5C"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -321,11 +338,12 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="B4f-6S-M2b"/>
+                    <navigationItem key="navigationItem" id="8QC-Qp-1r1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gx-0f-KzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104" y="747"/>
+            <point key="canvasLocation" x="1072" y="1320"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="8iS-jZ-KIR">
@@ -357,6 +375,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="WinkLoginButton" width="374" height="73"/>
+        <image name="WinkNoButton" width="71" height="72"/>
+        <image name="WinkYesButton" width="71" height="71"/>
         <image name="johnny" width="240" height="240"/>
     </resources>
 </document>

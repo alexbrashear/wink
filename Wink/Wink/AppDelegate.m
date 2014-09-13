@@ -68,7 +68,6 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo {
     [UIApplication sharedApplication].applicationIconBadgeNumber = [[[userInfo objectForKey:@"aps"] objectForKey: @"badgecount"] intValue];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"balanceUpdated" object:nil];
     [PFPush handlePush:userInfo];
 }
 

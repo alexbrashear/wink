@@ -9,4 +9,5 @@
 #import <Foundation/Foundation.h>
 @interface User : NSObject
 @property NSString *objectId;
+@property NSString *fbID;
 @end

@@ -100,6 +100,10 @@
                 }
             }];
             
+            PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+            [currentInstallation setObject:[PFUser currentUser].objectId forKey:@"userId"];
+            [currentInstallation saveInBackground];
+            
             // now request FB friend list
             FBRequest *request = [[FBRequest alloc] initWithSession:[PFFacebookUtils session] graphPath:@"me/friends"];
             
