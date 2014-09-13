@@ -40,6 +40,11 @@
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
 		C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */; };
 		C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD419C3E31F009678B1 /* PageContentViewController.m */; };
+		C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3142419C4073E00D2B4CD /* TestViewController.m */; };
+		C3E3143519C40C4500D2B4CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3142F19C40C4500D2B4CD /* ViewController.m */; };
+		C3E3143619C40C4500D2B4CD /* BTLECentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3143119C40C4500D2B4CD /* BTLECentralViewController.m */; };
+		C3E3143719C40C4500D2B4CD /* BTLEPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3143319C40C4500D2B4CD /* BTLEPeripheralViewController.m */; };
+		C3E3143B19C40C7800D2B4CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3143A19C40C7800D2B4CD /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +105,17 @@
 		C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingViewController.m; sourceTree = "<group>"; };
 		C3867BD319C3E31F009678B1 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		C3867BD419C3E31F009678B1 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		C3E3142319C4073E00D2B4CD /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		C3E3142419C4073E00D2B4CD /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		C3E3142E19C40C4500D2B4CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/ViewController.h"; sourceTree = "<group>"; };
+		C3E3142F19C40C4500D2B4CD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/ViewController.m"; sourceTree = "<group>"; };
+		C3E3143019C40C4500D2B4CD /* BTLECentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTLECentralViewController.h; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/BTLECentralViewController.h"; sourceTree = "<group>"; };
+		C3E3143119C40C4500D2B4CD /* BTLECentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTLECentralViewController.m; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/BTLECentralViewController.m"; sourceTree = "<group>"; };
+		C3E3143219C40C4500D2B4CD /* BTLEPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTLEPeripheralViewController.h; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/BTLEPeripheralViewController.h"; sourceTree = "<group>"; };
+		C3E3143319C40C4500D2B4CD /* BTLEPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTLEPeripheralViewController.m; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/BTLEPeripheralViewController.m"; sourceTree = "<group>"; };
+		C3E3143819C40C6900D2B4CD /* TransferService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferService.h; path = ../../../../.Trash/TransferService.h; sourceTree = "<group>"; };
+		C3E3143919C40C7800D2B4CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/ViewController.h"; sourceTree = "<group>"; };
+		C3E3143A19C40C7800D2B4CD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/ViewController.m"; sourceTree = "<group>"; };
 		D577372847554456997CFCEB /* libPods-Wink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -165,13 +181,16 @@
 			children = (
 				C3867BCF19C3E28E009678B1 /* Page View */,
 				B3DC9BAD19C3DBA70066DAC0 /* ViewControllers */,
-				B38AD38619C3BE3C00EF0C8E /* WConstants.m */,
+				C3E3142619C407D900D2B4CD /* Bluetooth */,
 				B38AD38819C3BE5100EF0C8E /* WConstants.h */,
+				B38AD38619C3BE3C00EF0C8E /* WConstants.m */,
 				B34FEA6D19C3BC1200886727 /* AppDelegate.h */,
 				B34FEA6E19C3BC1200886727 /* AppDelegate.m */,
 				B34FEA7019C3BC1200886727 /* WelcomeViewController.h */,
 				B34FEA7119C3BC1200886727 /* WelcomeViewController.m */,
 				B34FEA7319C3BC1300886727 /* Main.storyboard */,
+				C3E3142319C4073E00D2B4CD /* TestViewController.h */,
+				C3E3142419C4073E00D2B4CD /* TestViewController.m */,
 				B34FEA7619C3BC1300886727 /* Images.xcassets */,
 				B36C519819C3D353007E172A /* LaunchScreen.xib */,
 				B34FEA6919C3BC1200886727 /* Supporting Files */,
@@ -256,6 +275,22 @@
 				C3867BD419C3E31F009678B1 /* PageContentViewController.m */,
 			);
 			name = "Page View";
+			sourceTree = "<group>";
+		};
+		C3E3142619C407D900D2B4CD /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3143919C40C7800D2B4CD /* ViewController.h */,
+				C3E3143A19C40C7800D2B4CD /* ViewController.m */,
+				C3E3143819C40C6900D2B4CD /* TransferService.h */,
+				C3E3142E19C40C4500D2B4CD /* ViewController.h */,
+				C3E3142F19C40C4500D2B4CD /* ViewController.m */,
+				C3E3143019C40C4500D2B4CD /* BTLECentralViewController.h */,
+				C3E3143119C40C4500D2B4CD /* BTLECentralViewController.m */,
+				C3E3143219C40C4500D2B4CD /* BTLEPeripheralViewController.h */,
+				C3E3143319C40C4500D2B4CD /* BTLEPeripheralViewController.m */,
+			);
+			name = Bluetooth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,17 +428,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				B3DC9BD319C3F3B70066DAC0 /* EditViewController.m in Sources */,
 				B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */,
 				B34FEA7219C3BC1200886727 /* WelcomeViewController.m in Sources */,
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
+				C3E3143519C40C4500D2B4CD /* ViewController.m in Sources */,
 				C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */,
+				C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */,
+				C3E3143B19C40C7800D2B4CD /* ViewController.m in Sources */,
 				C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */,
+				C3E3143619C40C4500D2B4CD /* BTLECentralViewController.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
 				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,
+				C3E3143719C40C4500D2B4CD /* BTLEPeripheralViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
