@@ -33,6 +33,13 @@
 		B38AD3A619C3C28E00EF0C8E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD3A419C3C28E00EF0C8E /* ParseFacebookUtils.framework */; };
 		B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */; };
 		B3DC9BB219C3DFFE0066DAC0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */; };
+		B3DC9BB419C3E2A00066DAC0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB319C3E2A00066DAC0 /* libicucore.dylib */; };
+		B3DC9BB619C3E2A50066DAC0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB519C3E2A50066DAC0 /* CoreTelephony.framework */; };
+		B3DC9BC019C3E5710066DAC0 /* CharactersEscapeService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BBB19C3E5710066DAC0 /* CharactersEscapeService.m */; };
+		B3DC9BC119C3E5710066DAC0 /* ChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BBD19C3E5710066DAC0 /* ChatService.m */; };
+		B3DC9BC219C3E5710066DAC0 /* LocalStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BBF19C3E5710066DAC0 /* LocalStorageService.m */; };
+		B3DC9BC619C3E7600066DAC0 /* UserChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BC519C3E7600066DAC0 /* UserChatTableViewController.m */; };
+		B3DC9BCA19C3EA950066DAC0 /* ChatSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BC919C3EA950066DAC0 /* ChatSignIn.m */; };
 		C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BC419C3DC4D009678B1 /* EditViewController.m */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
@@ -85,6 +92,19 @@
 		B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWinkViewController.h; sourceTree = "<group>"; };
 		B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWinkViewController.m; sourceTree = "<group>"; };
 		B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B3DC9BB319C3E2A00066DAC0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		B3DC9BB519C3E2A50066DAC0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B3DC9BBA19C3E5710066DAC0 /* CharactersEscapeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactersEscapeService.h; sourceTree = "<group>"; };
+		B3DC9BBB19C3E5710066DAC0 /* CharactersEscapeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersEscapeService.m; sourceTree = "<group>"; };
+		B3DC9BBC19C3E5710066DAC0 /* ChatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatService.h; sourceTree = "<group>"; };
+		B3DC9BBD19C3E5710066DAC0 /* ChatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatService.m; sourceTree = "<group>"; };
+		B3DC9BBE19C3E5710066DAC0 /* LocalStorageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorageService.h; sourceTree = "<group>"; };
+		B3DC9BBF19C3E5710066DAC0 /* LocalStorageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorageService.m; sourceTree = "<group>"; };
+		B3DC9BC319C3E5EE0066DAC0 /* wink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wink-Prefix.pch"; sourceTree = "<group>"; };
+		B3DC9BC419C3E7600066DAC0 /* UserChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserChatTableViewController.h; sourceTree = "<group>"; };
+		B3DC9BC519C3E7600066DAC0 /* UserChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserChatTableViewController.m; sourceTree = "<group>"; };
+		B3DC9BC819C3EA950066DAC0 /* ChatSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatSignIn.h; sourceTree = "<group>"; };
+		B3DC9BC919C3EA950066DAC0 /* ChatSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatSignIn.m; sourceTree = "<group>"; };
 		C3867BC319C3DC4D009678B1 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		C3867BC419C3DC4D009678B1 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		C3867BC919C3DD01009678B1 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
@@ -103,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DC9BB619C3E2A50066DAC0 /* CoreTelephony.framework in Frameworks */,
+				B3DC9BB419C3E2A00066DAC0 /* libicucore.dylib in Frameworks */,
 				B3DC9BB219C3DFFE0066DAC0 /* CoreBluetooth.framework in Frameworks */,
 				B38AD3A219C3C0EB00EF0C8E /* UIKit.framework in Frameworks */,
 				B38AD39C19C3C0A800EF0C8E /* SystemConfiguration.framework in Frameworks */,
@@ -157,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				C3867BCF19C3E28E009678B1 /* Page View */,
+				B3DC9BC719C3EA820066DAC0 /* QuickbloxInteraction */,
+				B3DC9BB919C3E5710066DAC0 /* Services */,
 				B3DC9BAD19C3DBA70066DAC0 /* ViewControllers */,
 				B38AD38619C3BE3C00EF0C8E /* WConstants.m */,
 				B38AD38819C3BE5100EF0C8E /* WConstants.h */,
@@ -177,6 +201,7 @@
 			children = (
 				B34FEA6A19C3BC1200886727 /* Info.plist */,
 				B34FEA6B19C3BC1200886727 /* main.m */,
+				B3DC9BC319C3E5EE0066DAC0 /* wink-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -205,6 +230,8 @@
 				C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */,
 				C3867BC919C3DD01009678B1 /* ChatTableViewController.h */,
 				C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */,
+				B3DC9BC419C3E7600066DAC0 /* UserChatTableViewController.h */,
+				B3DC9BC519C3E7600066DAC0 /* UserChatTableViewController.m */,
 				C3867BC319C3DC4D009678B1 /* EditViewController.h */,
 				C3867BC419C3DC4D009678B1 /* EditViewController.m */,
 				B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */,
@@ -213,9 +240,33 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		B3DC9BB919C3E5710066DAC0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC9BBA19C3E5710066DAC0 /* CharactersEscapeService.h */,
+				B3DC9BBB19C3E5710066DAC0 /* CharactersEscapeService.m */,
+				B3DC9BBC19C3E5710066DAC0 /* ChatService.h */,
+				B3DC9BBD19C3E5710066DAC0 /* ChatService.m */,
+				B3DC9BBE19C3E5710066DAC0 /* LocalStorageService.h */,
+				B3DC9BBF19C3E5710066DAC0 /* LocalStorageService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B3DC9BC719C3EA820066DAC0 /* QuickbloxInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC9BC819C3EA950066DAC0 /* ChatSignIn.h */,
+				B3DC9BC919C3EA950066DAC0 /* ChatSignIn.m */,
+			);
+			name = QuickbloxInteraction;
+			sourceTree = "<group>";
+		};
 		BEE5AEB9AE504FAEA5E99A2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3DC9BB519C3E2A50066DAC0 /* CoreTelephony.framework */,
+				B3DC9BB319C3E2A00066DAC0 /* libicucore.dylib */,
 				B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */,
 				B38AD3A319C3C28E00EF0C8E /* Parse.framework */,
 				B38AD3A419C3C28E00EF0C8E /* ParseFacebookUtils.framework */,
@@ -383,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DC9BC219C3E5710066DAC0 /* LocalStorageService.m in Sources */,
 				B34FEA7219C3BC1200886727 /* WelcomeViewController.m in Sources */,
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
@@ -391,7 +443,13 @@
 				B38AD38719C3BE3C00EF0C8E /* WConstants.m in Sources */,
 				C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */,
 				C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */,
+				B3DC9BC019C3E5710066DAC0 /* CharactersEscapeService.m in Sources */,
+				B38AD38719C3BE3C00EF0C8E /* WConstants.m in Sources */,
+				C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */,
+				B3DC9BC119C3E5710066DAC0 /* ChatService.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
+				B3DC9BC619C3E7600066DAC0 /* UserChatTableViewController.m in Sources */,
+				B3DC9BCA19C3EA950066DAC0 /* ChatSignIn.m in Sources */,
 				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 988E88B25BD247CD9CE895D7 /* Pods-Wink.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Connor Hailey (498QDBX545)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -525,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 988E88B25BD247CD9CE895D7 /* Pods-Wink.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Connor Hailey (498QDBX545)";
 				FRAMEWORK_SEARCH_PATHS = (

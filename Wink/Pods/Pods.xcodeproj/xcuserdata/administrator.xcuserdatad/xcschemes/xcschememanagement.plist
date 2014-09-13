@@ -7,42 +7,52 @@
 		<key>HockeySDKResources.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Pods-Wink-AFNetworking.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-Wink-Bolts.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-Wink-Facebook-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-Wink-HockeySDK.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>5</integer>
 		</dict>
-		<key>Pods-Wink-SVProgressHUD.xcscheme</key>
+		<key>Pods-Wink-QuickBlox.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>Pods-Wink-SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Pods-Wink.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>22E2355A963D4F079CC6DCAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E7A12B5B0E94D48B80359C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +67,47 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4805F428C7514355BFC710E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>61D180A024C74A1DA0453A61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6E6932A5947B45778E10D8B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8C4B354B3F074CB08C6EB6EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DA66B3A2A9E415388A1314E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>940867E424854F6CA1D46CAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DBBD0D25ECC4894A3E2F2D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1AA0767C2CF48B4BA7E8AE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD02C5B947EE47C297EA63A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
