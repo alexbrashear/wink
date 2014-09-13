@@ -62,7 +62,6 @@
 		B3DC9C1C19C4796B0066DAC0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9C1B19C4796B0066DAC0 /* User.m */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
-		C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3142419C4073E00D2B4CD /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,8 +148,6 @@
 		C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
 		C3867BCC19C3E08F009678B1 /* ProfilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilesTableViewController.h; sourceTree = "<group>"; };
 		C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilesTableViewController.m; sourceTree = "<group>"; };
-		C3E3142319C4073E00D2B4CD /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		C3E3142419C4073E00D2B4CD /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		D577372847554456997CFCEB /* libPods-Wink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -242,8 +239,6 @@
 				B34FEA7019C3BC1200886727 /* WelcomeViewController.h */,
 				B34FEA7119C3BC1200886727 /* WelcomeViewController.m */,
 				B34FEA7319C3BC1300886727 /* Main.storyboard */,
-				C3E3142319C4073E00D2B4CD /* TestViewController.h */,
-				C3E3142419C4073E00D2B4CD /* TestViewController.m */,
 				B34FEA7619C3BC1300886727 /* Images.xcassets */,
 				B36C519819C3D353007E172A /* LaunchScreen.xib */,
 				B34FEA6919C3BC1200886727 /* Supporting Files */,
@@ -508,7 +503,6 @@
 				B3DC9BDA19C407DA0066DAC0 /* ChatTableViewCell.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
-				C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */,
 				B3DC9C1919C476190066DAC0 /* PotentialMatchTableViewCell.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
 				B3DC9BDE19C40AE30066DAC0 /* Message.m in Sources */,
