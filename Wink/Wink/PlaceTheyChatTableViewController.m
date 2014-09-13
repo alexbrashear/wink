@@ -9,7 +9,9 @@
 #import "PlaceTheyChatTableViewController.h"
 
 @interface PlaceTheyChatTableViewController ()
-
+@property (nonatomic, retain) UIToolbar *keyboardToolbar;
+- (void)setupKeyboardToolbar:(id)sender;
+- (void)resignKeyboard:(id)sender;
 @end
 
 @implementation PlaceTheyChatTableViewController
@@ -96,5 +98,28 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+# pragma mark - Keyboard Accessory
+
+- (void)setupKeyboardToolbar
+{
+    if (self.keyboardToolbar == nil) {
+        self.keyboardToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
+        UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"done"
+                                                                       style:UIBarButtonItemStyleBordered
+                                                                      target:self
+                                                                      action:@selector(resignKeyboard:)];
+        UIBarButtonItem *extraspace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                    target:self
+                                                                                    action:nil];
+        [self.keyboardToolbar setItems:[[NSArray alloc] initWithObjects:extraspace, doneButton, nil]];
+    }
+}
+
+- (void)resignKeyboard:(id)sender
+{
+    // resign textview when user presses "done"
+//    [field1 resignFirstResponder];
+}
 
 @end
