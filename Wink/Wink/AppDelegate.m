@@ -45,9 +45,11 @@
         return YES;
          */
     }
-        
+    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *startingVC =[storyboard instantiateViewControllerWithIdentifier:@"welcome"];
+    //UIViewController *startingVC =[storyboard instantiateInitialViewController];
+
     self.window.rootViewController = startingVC;
     [self.window makeKeyAndVisible];
     return YES;

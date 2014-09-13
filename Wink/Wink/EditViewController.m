@@ -9,6 +9,7 @@
 #import "EditViewController.h"
 
 @interface EditViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *profileImageView;
 
 @end
 
@@ -16,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupPic];
+}
+
+-(void)setupPic{
+    self.profileImageView.layer.borderWidth = 3.0f;
+    self.profileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.profileImageView.layer.cornerRadius = 10.0f;
+
 }
 
 - (void)didReceiveMemoryWarning {

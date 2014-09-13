@@ -44,6 +44,7 @@
             [self getUserInfo];
         } else {
             NSLog(@"User with facebook logged in!");
+            [SVProgressHUD dismiss];
             [self performSegueWithIdentifier:@"toMain" sender:self];
         }
     }];
@@ -66,19 +67,30 @@
             // get the FB user's profile image
             NSDictionary *dicFacebookPicture = [userData objectForKey:@"picture"];
             NSDictionary *dicFacebookData = [dicFacebookPicture objectForKey:@"data"];
-            /*
-            NSString *sUrlPic= [dicFacebookData objectForKey:@"url"];
             
+            NSString *sUrlPic= [dicFacebookData objectForKey:@"url"];
+            /*
             UIImage* imgProfile = [UIImage imageWithData:
                                    [NSData dataWithContentsOfURL:
                                     [NSURL URLWithString: sUrlPic]]];
             */
+            NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+            NSURLRequest *urlrequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:sUrlPic]];
+            [NSURLConnection sendAsynchronousRequest:urlrequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                /*
+                UIImage * imgProfile = [UIImage imageWithData:
+                                       [NSData dataWithContentsOfURL:
+                                        [NSURL URLWithString: sUrlPic]]];
+                 */
+                [self savePicToParse:data];
+                
+            }];
+            
             PFUser *user = [PFUser currentUser];
             user.email = email;
             [user setObject:[UIDevice currentDevice].identifierForVendor.UUIDString forKey:@"UUID"];
             [user setObject:name forKey:@"name"];
             [user setObject:sID forKey:@"fbID"];
-            //[user setObject:imgProfile forKey:@"profPic"];
             [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (succeeded) {
                     [SVProgressHUD dismiss];
@@ -112,6 +124,13 @@
         }
     }];
     
+}
+
+-(void)savePicToParse:(NSData *)picData{
+    PFFile *pic = [PFFile fileWithData:picData];
+    PFUser *user = [PFUser currentUser];
+    [user setObject:pic forKey:@"profPic"];
+    [user saveInBackground];
 }
 
 - (void)didReceiveMemoryWarning {

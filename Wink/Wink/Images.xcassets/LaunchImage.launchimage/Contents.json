@@ -29,14 +29,14 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "kambiosplash-1.png",
+      "filename" : "WinkSplashScreen02-1.png",
       "scale" : "2x"
     },
     {
       "extent" : "full-screen",
       "idiom" : "iphone",
       "subtype" : "retina4",
-      "filename" : "kambiosplash.png",
+      "filename" : "WinkSplashScreen02.png",
       "minimum-system-version" : "7.0",
       "orientation" : "portrait",
       "scale" : "2x"
@@ -85,6 +85,7 @@
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "WinkSplashScreen02-2.png",
       "subtype" : "retina4",
       "scale" : "2x"
     },
