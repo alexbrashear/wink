@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OnBoardingViewController : UIViewController
+@interface OnBoardingViewController : UIViewController  <UIPageViewControllerDataSource>
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) NSArray *pageTitles;
+@property (strong, nonatomic) NSArray *pageViewControllers;
 
 @end
