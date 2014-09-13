@@ -14,6 +14,7 @@
     // Initialization code
 }
 - (IBAction)yes:(id)sender {
+    NSLog(@"yay!");
     PFObject *chat = [PFObject objectWithClassName:@"Chats"];
     chat[@"senderId"] = self.potentialMatchId;
     chat[@"recipientId"] = [[PFUser currentUser] objectId];
@@ -24,6 +25,7 @@
     
 }
 - (IBAction)no:(id)sender {
+    NSLog(@"nah");
     [self removePotentialFromArray];
 }
 
@@ -47,8 +49,11 @@
              tempArray = [user objectForKey:@"potentialMatches"];
              NSMutableArray *tempArray2 = [[NSMutableArray alloc] init];
              for (PFObject *object in tempArray){
-                 if (![object.objectId isEqualToString:self.potentialMatchId])
+                 NSLog(@"objectid1: %@", object.objectId);
+                 if (![object.objectId isEqualToString:self.potentialMatchId]){
+                     NSLog(@"objectid: %@", object.objectId);
                      [tempArray2 addObject:object.objectId];
+                 }
              }
              user[@"potentialMatches"] = tempArray2;
              [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
