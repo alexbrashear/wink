@@ -39,15 +39,14 @@
 		B3DC9BD619C406770066DAC0 /* PlaceTheyChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BD519C406770066DAC0 /* PlaceTheyChatTableViewController.m */; };
 		B3DC9BDA19C407DA0066DAC0 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BD919C407DA0066DAC0 /* ChatTableViewCell.m */; };
 		B3DC9BDE19C40AE30066DAC0 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BDD19C40AE30066DAC0 /* Message.m */; };
+		C361EC8119C4183D007D5C3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C361EC7C19C4183D007D5C3A /* ViewController.m */; };
+		C361EC8219C4183D007D5C3A /* BTLECentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C361EC7E19C4183D007D5C3A /* BTLECentralViewController.m */; };
+		C361EC8319C4183D007D5C3A /* BTLEPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C361EC8019C4183D007D5C3A /* BTLEPeripheralViewController.m */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
 		C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */; };
 		C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD419C3E31F009678B1 /* PageContentViewController.m */; };
 		C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3142419C4073E00D2B4CD /* TestViewController.m */; };
-		C3E3143519C40C4500D2B4CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3142F19C40C4500D2B4CD /* ViewController.m */; };
-		C3E3143619C40C4500D2B4CD /* BTLECentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3143119C40C4500D2B4CD /* BTLECentralViewController.m */; };
-		C3E3143719C40C4500D2B4CD /* BTLEPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3143319C40C4500D2B4CD /* BTLEPeripheralViewController.m */; };
-		C3E3143B19C40C7800D2B4CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3143A19C40C7800D2B4CD /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +103,13 @@
 		B3DC9BD919C407DA0066DAC0 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
 		B3DC9BDC19C40AE30066DAC0 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		B3DC9BDD19C40AE30066DAC0 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		C361EC7B19C4183D007D5C3A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C361EC7C19C4183D007D5C3A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C361EC7D19C4183D007D5C3A /* BTLECentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLECentralViewController.h; sourceTree = "<group>"; };
+		C361EC7E19C4183D007D5C3A /* BTLECentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLECentralViewController.m; sourceTree = "<group>"; };
+		C361EC7F19C4183D007D5C3A /* BTLEPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEPeripheralViewController.h; sourceTree = "<group>"; };
+		C361EC8019C4183D007D5C3A /* BTLEPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEPeripheralViewController.m; sourceTree = "<group>"; };
+		C361EC8419C41853007D5C3A /* TransferService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferService.h; sourceTree = "<group>"; };
 		C3867BC319C3DC4D009678B1 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		C3867BC419C3DC4D009678B1 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		C3867BC919C3DD01009678B1 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
@@ -116,15 +122,6 @@
 		C3867BD419C3E31F009678B1 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		C3E3142319C4073E00D2B4CD /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		C3E3142419C4073E00D2B4CD /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		C3E3142E19C40C4500D2B4CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/ViewController.h"; sourceTree = "<group>"; };
-		C3E3142F19C40C4500D2B4CD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/ViewController.m"; sourceTree = "<group>"; };
-		C3E3143019C40C4500D2B4CD /* BTLECentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTLECentralViewController.h; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/BTLECentralViewController.h"; sourceTree = "<group>"; };
-		C3E3143119C40C4500D2B4CD /* BTLECentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTLECentralViewController.m; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/BTLECentralViewController.m"; sourceTree = "<group>"; };
-		C3E3143219C40C4500D2B4CD /* BTLEPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTLEPeripheralViewController.h; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/BTLEPeripheralViewController.h"; sourceTree = "<group>"; };
-		C3E3143319C40C4500D2B4CD /* BTLEPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTLEPeripheralViewController.m; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/BTLEPeripheralViewController.m"; sourceTree = "<group>"; };
-		C3E3143819C40C6900D2B4CD /* TransferService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferService.h; path = ../../../../.Trash/TransferService.h; sourceTree = "<group>"; };
-		C3E3143919C40C7800D2B4CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/ViewController.h"; sourceTree = "<group>"; };
-		C3E3143A19C40C7800D2B4CD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../Downloads/BTLE_Transfer/BTLE Transfer/ViewController.m"; sourceTree = "<group>"; };
 		D577372847554456997CFCEB /* libPods-Wink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -311,15 +308,13 @@
 		C3E3142619C407D900D2B4CD /* Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				C3E3143919C40C7800D2B4CD /* ViewController.h */,
-				C3E3143A19C40C7800D2B4CD /* ViewController.m */,
-				C3E3143819C40C6900D2B4CD /* TransferService.h */,
-				C3E3142E19C40C4500D2B4CD /* ViewController.h */,
-				C3E3142F19C40C4500D2B4CD /* ViewController.m */,
-				C3E3143019C40C4500D2B4CD /* BTLECentralViewController.h */,
-				C3E3143119C40C4500D2B4CD /* BTLECentralViewController.m */,
-				C3E3143219C40C4500D2B4CD /* BTLEPeripheralViewController.h */,
-				C3E3143319C40C4500D2B4CD /* BTLEPeripheralViewController.m */,
+				C361EC7B19C4183D007D5C3A /* ViewController.h */,
+				C361EC8419C41853007D5C3A /* TransferService.h */,
+				C361EC7C19C4183D007D5C3A /* ViewController.m */,
+				C361EC7D19C4183D007D5C3A /* BTLECentralViewController.h */,
+				C361EC7E19C4183D007D5C3A /* BTLECentralViewController.m */,
+				C361EC7F19C4183D007D5C3A /* BTLEPeripheralViewController.h */,
+				C361EC8019C4183D007D5C3A /* BTLEPeripheralViewController.m */,
 			);
 			name = Bluetooth;
 			sourceTree = "<group>";
@@ -464,19 +459,18 @@
 				B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */,
 				B34FEA7219C3BC1200886727 /* WelcomeViewController.m in Sources */,
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
+				C361EC8219C4183D007D5C3A /* BTLECentralViewController.m in Sources */,
 				B3DC9BDA19C407DA0066DAC0 /* ChatTableViewCell.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
-				C3E3143519C40C4500D2B4CD /* ViewController.m in Sources */,
 				C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */,
+				C361EC8119C4183D007D5C3A /* ViewController.m in Sources */,
 				C3E3142519C4073E00D2B4CD /* TestViewController.m in Sources */,
-				C3E3143B19C40C7800D2B4CD /* ViewController.m in Sources */,
 				C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */,
-				C3E3143619C40C4500D2B4CD /* BTLECentralViewController.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
 				B3DC9BDE19C40AE30066DAC0 /* Message.m in Sources */,
+				C361EC8319C4183D007D5C3A /* BTLEPeripheralViewController.m in Sources */,
 				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,
-				C3E3143719C40C4500D2B4CD /* BTLEPeripheralViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
