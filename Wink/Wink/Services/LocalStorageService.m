@@ -7,7 +7,8 @@
 //
 
 #import "LocalStorageService.h"
-
+#import <Quickblox/Quickblox.h>
+#import <Quickblox/QBUUser.h>
 @implementation LocalStorageService
 
 + (instancetype)shared

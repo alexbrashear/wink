@@ -40,7 +40,7 @@
         // Login to QuickBlox Chat
         //
         [[ChatService instance] loginWithUser:currentUser completionBlock:^{
-            
+        
             // hide alert after delay
             double delayInSeconds = 1.0;
             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));

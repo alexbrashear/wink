@@ -12,6 +12,7 @@
 #import <AFNetworking.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <Quickblox/Quickblox.h>
+#import "ChatSignIn.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -42,6 +43,7 @@
     [QBSettings setAccountKey:@"VXf6oqi6mzh9KWup7KY8"];
     
     if ([PFUser currentUser]){
+        [ChatSignIn quickBloxChatSignIn];
         /*
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *startingVC =[storyboard instantiateViewControllerWithIdentifier:@"welcome"];

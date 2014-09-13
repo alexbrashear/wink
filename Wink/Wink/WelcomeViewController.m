@@ -10,7 +10,8 @@
 #import <SVProgressHUD.h>
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
-
+#import "ChatSignIn.h"
+#import "ChatSignUp.h"
 @interface WelcomeViewController ()
 
 @end
@@ -42,8 +43,10 @@
             }
         } else if (user.isNew) {
             NSLog(@"User with facebook signed up and logged in!");
+            [ChatSignUp quickBloxChatSignUp];
             [self getUserInfo];
         } else {
+            [ChatSignIn quickBloxChatSignIn];
             NSLog(@"User with facebook logged in!");
         }
     }];
