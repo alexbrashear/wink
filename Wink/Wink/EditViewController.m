@@ -17,10 +17,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self retrievePic];
+    [self retrievePicBetter];
+    // [self retrievePic];
 }
+-(void)savePicToParse:(NSData *)picData{
+    PFFile *pic = [PFFile fileWithData:picData];
+    PFUser *user = [PFUser currentUser];
+    [user setObject:pic forKey:@"profPic"];
+    [user saveInBackground];
+    [self setupPic:[UIImage imageWithData:picData]];
+}
+- (void)retrievePicBetter {
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    NSURL *profilePictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large", [[PFUser currentUser] objectForKey:@"fbID"]]];
+    NSURLRequest *urlrequest = [[NSURLRequest alloc] initWithURL:profilePictureURL];
+    [NSURLConnection sendAsynchronousRequest:urlrequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        [self savePicToParse:data];
+    }];
 
--(void)retrievePic{
+}
+- (void)retrievePic{
     PFQuery *picQuery = [PFUser query];
     [picQuery whereKey:@"objectId" equalTo:[[PFUser currentUser]objectId]];
     [picQuery getFirstObjectInBackgroundWithBlock:^(PFObject *user, NSError *error)
