@@ -7,13 +7,9 @@
 //
 
 #import "ChatTableViewController.h"
-#import "LocalStorageService.h"
 #import <SVProgressHUD.h>
-#import "UserChatTableViewController.h"
-#define kShowNewChatViewControllerSegue @"ShowNewChatViewControllerSegue"
-#define kShowChatViewControllerSegue @"ShowChatViewControllerSegue"
 
-@interface ChatTableViewController () <QBActionStatusDelegate>
+@interface ChatTableViewController ()
 @property (nonatomic, strong) NSMutableArray *dialogs;
 
 @end
@@ -23,110 +19,74 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    if([LocalStorageService shared].currentUser != nil){
-        [SVProgressHUD show];
-        
-        // get dialogs
-        [QBChat dialogsWithExtendedRequest:nil delegate:self];
-    }
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    if(self.createdDialog != nil){
-        [self performSegueWithIdentifier:kShowNewChatViewControllerSegue sender:nil];
-    }
+    
 }
 
-#pragma mark
-#pragma mark Storyboard
+#pragma mark - Table view data source
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.destinationViewController isKindOfClass:UserChatTableViewController.class]){
-        UserChatTableViewController *destinationViewController = (UserChatTableViewController *)segue.destinationViewController;
-        
-        if(self.createdDialog != nil){
-            destinationViewController.dialog = self.createdDialog;
-            self.createdDialog = nil;
-        }else{
-            QBChatDialog *dialog = self.dialogs[((UITableViewCell *)sender).tag];
-            destinationViewController.dialog = dialog;
-        }
-    }
-}
-
-
-#pragma mark
-#pragma mark UITableViewDelegate & UITableViewDataSource
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [self.dialogs count];
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChatRoomCellIdentifier"];
+    /*
+    static NSString *CellIdentifier = @"historyCell";
+    PSHistoryTableViewCell *cell = (PSHistoryTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    QBChatDialog *chatDialog = self.dialogs[indexPath.row];
-    cell.tag  = indexPath.row;
-    
-    switch (chatDialog.type) {
-        case QBChatDialogTypePrivate:{
-            cell.detailTextLabel.text = @"private";
-            QBUUser *recipient = [LocalStorageService shared].usersAsDictionary[@(chatDialog.recipientID)];
-            cell.textLabel.text = recipient.login == nil ? recipient.email : recipient.login;
-        }
-            break;
-        case QBChatDialogTypeGroup:{
-            cell.detailTextLabel.text = @"group";
-            cell.textLabel.text = chatDialog.name;
-        }
-            break;
-        case QBChatDialogTypePublicGroup:{
-            cell.detailTextLabel.text = @"public group";
-            cell.textLabel.text = chatDialog.name;
-        }
-            break;
-            
-        default:
-            break;
+    if (cell == nil) {
+        cell = [[PSHistoryTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
+    
+    PSTransaction *transaction = nil;
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+        transaction = [self.searchResults objectAtIndex:indexPath.row];
+    else
+        transaction = [self.transactions objectAtIndex:indexPath.row];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    NSString *dateString = [dateFormatter stringFromDate:transaction.createdAt];
+    
+    if ([[[PFUser currentUser]objectId] isEqualToString:transaction.sellerId]){
+        cell.infoLabel.text = transaction.buyerUsername;
+        cell.amountLabel.textColor = [UIColor blackColor];
+        cell.amountLabel.text = [NSString stringWithFormat:@"$%@", transaction.amount];
+    }
+    else {
+        cell.infoLabel.text = transaction.sellerUsername;
+        cell.amountLabel.textColor = [UIColor redColor];
+        cell.amountLabel.text = [NSString stringWithFormat:@"-$%@", transaction.amount];
+    }
+    
+    cell.dateLabel.text = dateString;
+    //cell.infoLabel.font = [UIFont fontWithName:@"Bender" size:18];
+    cell.infoLabel.textColor = [UIColor blackColor];
+    [cell setNeedsLayout];
     
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
-
-#pragma mark -
-#pragma mark QBActionStatusDelegate
-
-// QuickBlox API queries delegate
-- (void)completedWithResult:(Result *)result{
-    if (result.success && [result isKindOfClass:[QBDialogsPagedResult class]]) {
-        QBDialogsPagedResult *pagedResult = (QBDialogsPagedResult *)result;
-        //
-        NSArray *dialogs = pagedResult.dialogs;
-        self.dialogs = [dialogs mutableCopy];
-        
-        QBGeneralResponsePage *pagedRequest = [QBGeneralResponsePage responsePageWithCurrentPage:0 perPage:100];
-        //
-        NSSet *dialogsUsersIDs = pagedResult.dialogsUsersIDs;
-        //
-        [QBRequest usersWithIDs:[dialogsUsersIDs allObjects] page:pagedRequest successBlock:^(QBResponse *response, QBGeneralResponsePage *page, NSArray *users) {
-            
-            [LocalStorageService shared].users = users;
-            //
-            [self.tableView reloadData];
-            [SVProgressHUD dismiss];
-            
-        } errorBlock:nil];
-        
-    }
+    */
+    return nil;
 }
 
 @end

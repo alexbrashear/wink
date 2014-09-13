@@ -29,11 +29,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Wink-QuickBlox.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Wink-SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E7A12B5B0E94D48B80359C2</key>
+		<key>3AD761C2A93F4A489AA20ADC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4805F428C7514355BFC710E4</key>
+		<key>52CB7CA194D543E9AEF96E91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61D180A024C74A1DA0453A61</key>
+		<key>5C9C4FBC01D24B19997EA9D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DA66B3A2A9E415388A1314E</key>
+		<key>931F497C30054BF290CDA687</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>940867E424854F6CA1D46CAB</key>
+		<key>A23BC2496219404E810BFC65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9DBBD0D25ECC4894A3E2F2D3</key>
+		<key>ACCBD80205CF4FDE88B192F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A1AA0767C2CF48B4BA7E8AE2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AD02C5B947EE47C297EA63A9</key>
+		<key>B4E2623A007A48ACA26ED7C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

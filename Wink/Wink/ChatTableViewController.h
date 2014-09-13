@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Quickblox/Quickblox.h>
 @interface ChatTableViewController : UITableViewController
-@property (strong, nonatomic) QBChatDialog *createdDialog;
 
 @end
