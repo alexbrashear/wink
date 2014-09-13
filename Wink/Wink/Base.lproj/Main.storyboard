@@ -95,16 +95,31 @@
         <scene sceneID="zSx-hq-DVY">
             <objects>
                 <tableViewController id="2aL-Ys-hHu" customClass="ChatTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ddR-l6-ElE">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="22" sectionFooterHeight="22" id="ddR-l6-ElE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ja4-ed-DA1">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="chatCell" rowHeight="76" id="Ja4-ed-DA1" customClass="ChatTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ja4-ed-DA1" id="mnu-S8-fvC">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="johnny" translatesAutoresizingMaskIntoConstraints="NO" id="FPe-tp-Ym1">
+                                            <rect key="frame" x="27" y="0.0" width="76" height="76"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The most recent message goes here" translatesAutoresizingMaskIntoConstraints="NO" id="pYD-z8-Hwn">
+                                            <rect key="frame" x="116" y="9" width="196" height="59"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lastMessageView" destination="pYD-z8-Hwn" id="8lz-Yt-A37"/>
+                                    <outlet property="profPic" destination="FPe-tp-Ym1" id="abi-NZ-NTN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -116,7 +131,34 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rrq-vO-hXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="-616"/>
+            <point key="canvasLocation" x="1551" y="-623"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="CJb-Ms-Pmr">
+            <objects>
+                <tableViewController id="SlA-EW-Ccz" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1VP-ii-gQG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dJt-6k-BBs">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dJt-6k-BBs" id="koY-Jq-rAb">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SlA-EW-Ccz" id="35X-7k-py6"/>
+                            <outlet property="delegate" destination="SlA-EW-Ccz" id="fLu-TA-c2q"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w65-WP-6dD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1941" y="-623"/>
         </scene>
         <!--Wink View Controller-->
         <scene sceneID="bjU-7c-oCc">
@@ -234,4 +276,7 @@
             <point key="canvasLocation" x="1551" y="822"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="johnny" width="240" height="240"/>
+    </resources>
 </document>
