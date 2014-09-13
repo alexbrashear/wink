@@ -15,7 +15,6 @@
 		B34FEA7719C3BC1300886727 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34FEA7619C3BC1300886727 /* Images.xcassets */; };
 		B34FEA8619C3BC1300886727 /* WinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B34FEA8519C3BC1300886727 /* WinkTests.m */; };
 		B36C519919C3D353007E172A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36C519819C3D353007E172A /* LaunchScreen.xib */; };
-		B38AD38719C3BE3C00EF0C8E /* WConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B38AD38619C3BE3C00EF0C8E /* WConstants.m */; };
 		B38AD38A19C3C07D00EF0C8E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD38919C3C07D00EF0C8E /* AudioToolbox.framework */; };
 		B38AD38C19C3C08200EF0C8E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD38B19C3C08200EF0C8E /* CFNetwork.framework */; };
 		B38AD38E19C3C08600EF0C8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD38D19C3C08600EF0C8E /* CoreGraphics.framework */; };
@@ -42,7 +41,8 @@
 		B3DC9BCA19C3EA950066DAC0 /* ChatSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BC919C3EA950066DAC0 /* ChatSignIn.m */; };
 		B3DC9BCD19C3ED200066DAC0 /* ChatSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BCC19C3ED200066DAC0 /* ChatSignUp.m */; };
 		B3DC9BD119C3EF7B0066DAC0 /* ChatMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BD019C3EF7B0066DAC0 /* ChatMessageTableViewCell.m */; };
-		C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BC419C3DC4D009678B1 /* EditViewController.m */; };
+		B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B38AD38619C3BE3C00EF0C8E /* WConstants.m */; };
+		B3DC9BD319C3F3B70066DAC0 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BC419C3DC4D009678B1 /* EditViewController.m */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
 		C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */; };
@@ -452,6 +452,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DC9BD319C3F3B70066DAC0 /* EditViewController.m in Sources */,
+				B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */,
 				B3DC9BC219C3E5710066DAC0 /* LocalStorageService.m in Sources */,
 				B34FEA7219C3BC1200886727 /* WelcomeViewController.m in Sources */,
 				B3DC9BD119C3EF7B0066DAC0 /* ChatMessageTableViewCell.m in Sources */,
@@ -459,12 +461,8 @@
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
 				C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */,
-				B38AD38719C3BE3C00EF0C8E /* WConstants.m in Sources */,
-				C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */,
 				C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */,
 				B3DC9BC019C3E5710066DAC0 /* CharactersEscapeService.m in Sources */,
-				B38AD38719C3BE3C00EF0C8E /* WConstants.m in Sources */,
-				C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */,
 				B3DC9BC119C3E5710066DAC0 /* ChatService.m in Sources */,
 				B3DC9BCD19C3ED200066DAC0 /* ChatSignUp.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,

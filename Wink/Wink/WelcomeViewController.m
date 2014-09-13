@@ -109,6 +109,9 @@
                 }
             }];
         }
+        else{
+            NSLog(@"what the fuck is the problem... %@", error.description);
+        }
     }];
     
 }
