@@ -7,6 +7,7 @@
 //
 
 #import "ProfilesTableViewController.h"
+#import "PotentialMatchTableViewCell.h"
 #import <Parse/Parse.h>
 #import "User.h"
 @interface ProfilesTableViewController ()
@@ -18,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(retrievePotentials) name:@"retrievePotentials" object:nil];
     
     self.potentialMatches = [[NSMutableArray alloc] init];
     [self retrievePotentials];
@@ -54,8 +57,10 @@
     [potentialsQuery findObjectsInBackgroundWithBlock:^(NSArray *users, NSError *error)
      {
          if (!error){
-             for (PFObject *user in users){
-                 
+             for (PFObject *pfuser in users){
+                 User *user = [[User alloc] init];
+                 user.objectId = pfuser.objectId;
+                 [self.potentialsInfo addObject:user.objectId];
              }
                  
          }
@@ -77,15 +82,21 @@
     return self.potentialMatches.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"potentialCell";
+    PotentialMatchTableViewCell *cell = (PotentialMatchTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    if (cell == nil) {
+        cell = [[PotentialMatchTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+
+    User *user = [self.potentialsInfo objectAtIndex:indexPath.row];
+    cell.potentialMatchId = user.objectId;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
