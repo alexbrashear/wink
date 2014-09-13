@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD02C5B947EE47C297EA63A9"
+               BlueprintIdentifier = "B4E2623A007A48ACA26ED7C4"
                BuildableName = "libPods-Wink-AFNetworking.a"
                BlueprintName = "Pods-Wink-AFNetworking"
                ReferencedContainer = "container:Pods.xcodeproj">

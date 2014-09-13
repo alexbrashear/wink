@@ -11,8 +11,6 @@
 #import "WConstants.h"
 #import <AFNetworking.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
-#import <Quickblox/Quickblox.h>
-#import "ChatSignIn.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -37,13 +35,8 @@
      UIRemoteNotificationTypeAlert |
      UIRemoteNotificationTypeSound];
     
-    [QBApplication sharedApplication].applicationId = 92;
-    [QBConnection registerServiceKey:@"wJHdOcQSxXQGWx5"];
-    [QBConnection registerServiceSecret:@"BTFsj7Rtt27DAmT"];
-    [QBSettings setAccountKey:@"VXf6oqi6mzh9KWup7KY8"];
-    
     if ([PFUser currentUser]){
-        [ChatSignIn quickBloxChatSignIn];
+        //[ChatSignIn quickBloxChatSignIn];
         /*
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *startingVC =[storyboard instantiateViewControllerWithIdentifier:@"welcome"];

@@ -34,15 +34,8 @@
 		B3DC9BB219C3DFFE0066DAC0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */; };
 		B3DC9BB419C3E2A00066DAC0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB319C3E2A00066DAC0 /* libicucore.dylib */; };
 		B3DC9BB619C3E2A50066DAC0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB519C3E2A50066DAC0 /* CoreTelephony.framework */; };
-		B3DC9BC019C3E5710066DAC0 /* CharactersEscapeService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BBB19C3E5710066DAC0 /* CharactersEscapeService.m */; };
-		B3DC9BC119C3E5710066DAC0 /* ChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BBD19C3E5710066DAC0 /* ChatService.m */; };
-		B3DC9BC219C3E5710066DAC0 /* LocalStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BBF19C3E5710066DAC0 /* LocalStorageService.m */; };
-		B3DC9BC619C3E7600066DAC0 /* UserChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BC519C3E7600066DAC0 /* UserChatTableViewController.m */; };
-		B3DC9BCA19C3EA950066DAC0 /* ChatSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BC919C3EA950066DAC0 /* ChatSignIn.m */; };
-		B3DC9BCD19C3ED200066DAC0 /* ChatSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BCC19C3ED200066DAC0 /* ChatSignUp.m */; };
-		B3DC9BD119C3EF7B0066DAC0 /* ChatMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BD019C3EF7B0066DAC0 /* ChatMessageTableViewCell.m */; };
-		C3748F7D19C3F79200DEF87D /* WConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B38AD38619C3BE3C00EF0C8E /* WConstants.m */; };
-		C3748F7E19C3F7A000DEF87D /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BC419C3DC4D009678B1 /* EditViewController.m */; };
+		B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B38AD38619C3BE3C00EF0C8E /* WConstants.m */; };
+		B3DC9BD319C3F3B70066DAC0 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BC419C3DC4D009678B1 /* EditViewController.m */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
 		C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */; };
@@ -96,21 +89,7 @@
 		B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B3DC9BB319C3E2A00066DAC0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		B3DC9BB519C3E2A50066DAC0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		B3DC9BBA19C3E5710066DAC0 /* CharactersEscapeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactersEscapeService.h; sourceTree = "<group>"; };
-		B3DC9BBB19C3E5710066DAC0 /* CharactersEscapeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersEscapeService.m; sourceTree = "<group>"; };
-		B3DC9BBC19C3E5710066DAC0 /* ChatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatService.h; sourceTree = "<group>"; };
-		B3DC9BBD19C3E5710066DAC0 /* ChatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatService.m; sourceTree = "<group>"; };
-		B3DC9BBE19C3E5710066DAC0 /* LocalStorageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorageService.h; sourceTree = "<group>"; };
-		B3DC9BBF19C3E5710066DAC0 /* LocalStorageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorageService.m; sourceTree = "<group>"; };
 		B3DC9BC319C3E5EE0066DAC0 /* wink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wink-Prefix.pch"; sourceTree = "<group>"; };
-		B3DC9BC419C3E7600066DAC0 /* UserChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserChatTableViewController.h; sourceTree = "<group>"; };
-		B3DC9BC519C3E7600066DAC0 /* UserChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserChatTableViewController.m; sourceTree = "<group>"; };
-		B3DC9BC819C3EA950066DAC0 /* ChatSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatSignIn.h; sourceTree = "<group>"; };
-		B3DC9BC919C3EA950066DAC0 /* ChatSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatSignIn.m; sourceTree = "<group>"; };
-		B3DC9BCB19C3ED200066DAC0 /* ChatSignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatSignUp.h; sourceTree = "<group>"; };
-		B3DC9BCC19C3ED200066DAC0 /* ChatSignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatSignUp.m; sourceTree = "<group>"; };
-		B3DC9BCF19C3EF7B0066DAC0 /* ChatMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMessageTableViewCell.h; sourceTree = "<group>"; };
-		B3DC9BD019C3EF7B0066DAC0 /* ChatMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessageTableViewCell.m; sourceTree = "<group>"; };
 		C3867BC319C3DC4D009678B1 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		C3867BC419C3DC4D009678B1 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		C3867BC919C3DD01009678B1 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
@@ -184,10 +163,7 @@
 		B34FEA6819C3BC1200886727 /* Wink */ = {
 			isa = PBXGroup;
 			children = (
-				B3DC9BCE19C3EF5A0066DAC0 /* Views */,
 				C3867BCF19C3E28E009678B1 /* Page View */,
-				B3DC9BC719C3EA820066DAC0 /* QuickbloxInteraction */,
-				B3DC9BB919C3E5710066DAC0 /* Services */,
 				B3DC9BAD19C3DBA70066DAC0 /* ViewControllers */,
 				B38AD38619C3BE3C00EF0C8E /* WConstants.m */,
 				B38AD38819C3BE5100EF0C8E /* WConstants.h */,
@@ -237,47 +213,12 @@
 				C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */,
 				C3867BC919C3DD01009678B1 /* ChatTableViewController.h */,
 				C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */,
-				B3DC9BC419C3E7600066DAC0 /* UserChatTableViewController.h */,
-				B3DC9BC519C3E7600066DAC0 /* UserChatTableViewController.m */,
 				C3867BC319C3DC4D009678B1 /* EditViewController.h */,
 				C3867BC419C3DC4D009678B1 /* EditViewController.m */,
 				B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */,
 				B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		B3DC9BB919C3E5710066DAC0 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				B3DC9BBA19C3E5710066DAC0 /* CharactersEscapeService.h */,
-				B3DC9BBB19C3E5710066DAC0 /* CharactersEscapeService.m */,
-				B3DC9BBC19C3E5710066DAC0 /* ChatService.h */,
-				B3DC9BBD19C3E5710066DAC0 /* ChatService.m */,
-				B3DC9BBE19C3E5710066DAC0 /* LocalStorageService.h */,
-				B3DC9BBF19C3E5710066DAC0 /* LocalStorageService.m */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		B3DC9BC719C3EA820066DAC0 /* QuickbloxInteraction */ = {
-			isa = PBXGroup;
-			children = (
-				B3DC9BC819C3EA950066DAC0 /* ChatSignIn.h */,
-				B3DC9BC919C3EA950066DAC0 /* ChatSignIn.m */,
-				B3DC9BCB19C3ED200066DAC0 /* ChatSignUp.h */,
-				B3DC9BCC19C3ED200066DAC0 /* ChatSignUp.m */,
-			);
-			name = QuickbloxInteraction;
-			sourceTree = "<group>";
-		};
-		B3DC9BCE19C3EF5A0066DAC0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B3DC9BCF19C3EF7B0066DAC0 /* ChatMessageTableViewCell.h */,
-				B3DC9BD019C3EF7B0066DAC0 /* ChatMessageTableViewCell.m */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		BEE5AEB9AE504FAEA5E99A2E /* Frameworks */ = {
@@ -452,22 +393,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3748F7E19C3F7A000DEF87D /* EditViewController.m in Sources */,
-				C3748F7D19C3F79200DEF87D /* WConstants.m in Sources */,
-				B3DC9BC219C3E5710066DAC0 /* LocalStorageService.m in Sources */,
+
+				B3DC9BD319C3F3B70066DAC0 /* EditViewController.m in Sources */,
+				B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */,
 				B34FEA7219C3BC1200886727 /* WelcomeViewController.m in Sources */,
-				B3DC9BD119C3EF7B0066DAC0 /* ChatMessageTableViewCell.m in Sources */,
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
 				C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */,
 				C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */,
-				B3DC9BC019C3E5710066DAC0 /* CharactersEscapeService.m in Sources */,
-				B3DC9BC119C3E5710066DAC0 /* ChatService.m in Sources */,
-				B3DC9BCD19C3ED200066DAC0 /* ChatSignUp.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
-				B3DC9BC619C3E7600066DAC0 /* UserChatTableViewController.m in Sources */,
-				B3DC9BCA19C3EA950066DAC0 /* ChatSignIn.m in Sources */,
 				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

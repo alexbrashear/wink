@@ -10,8 +10,6 @@
 #import <SVProgressHUD.h>
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
-#import "ChatSignIn.h"
-#import "ChatSignUp.h"
 @interface WelcomeViewController ()
 
 @end
@@ -43,17 +41,17 @@
             }
         } else if (user.isNew) {
             NSLog(@"User with facebook signed up and logged in!");
-            [ChatSignUp quickBloxChatSignUp];
             [self getUserInfo];
         } else {
-            [ChatSignIn quickBloxChatSignIn];
             NSLog(@"User with facebook logged in!");
+            [self performSegueWithIdentifier:@"toMain" sender:self];
         }
     }];
 
 }
 
 -(void)getUserInfo{
+    NSLog(@"get user info");
     NSString *requestPath = @"me/?fields=name,location,gender,birthday,relationship_status,picture,email,id";
     
     FBRequest *request = [[FBRequest alloc] initWithSession:[PFFacebookUtils session] graphPath:requestPath];
@@ -69,28 +67,27 @@
             NSDictionary *dicFacebookPicture = [userData objectForKey:@"picture"];
             NSDictionary *dicFacebookData = [dicFacebookPicture objectForKey:@"data"];
             NSString *sUrlPic= [dicFacebookData objectForKey:@"url"];
+            /*
             UIImage* imgProfile = [UIImage imageWithData:
                                    [NSData dataWithContentsOfURL:
                                     [NSURL URLWithString: sUrlPic]]];
-            
+            */
             PFUser *user = [PFUser currentUser];
             user.email = email;
             [user setObject:[UIDevice currentDevice].identifierForVendor.UUIDString forKey:@"UUID"];
             [user setObject:name forKey:@"name"];
             [user setObject:sID forKey:@"fbID"];
-            [user setObject:imgProfile forKey:@"profPic"];
-            
+            //[user setObject:imgProfile forKey:@"profPic"];
             [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (succeeded) {
                     [SVProgressHUD dismiss];
-                    [self performSegueWithIdentifier:@"toMain" sender:self];
                     
                 } else {
                     [SVProgressHUD dismiss];
                     NSLog(@"fml: %@", error);
                 }
             }];
-
+            
             // now request FB friend list
             FBRequest *request = [[FBRequest alloc] initWithSession:[PFFacebookUtils session] graphPath:@"me/friends"];
             
@@ -108,6 +105,9 @@
                     
                 }
             }];
+        }
+        else{
+            NSLog(@"what the fuck is the problem... %@", error.description);
         }
     }];
     

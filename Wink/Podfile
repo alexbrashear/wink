@@ -9,7 +9,6 @@ pod 'HockeySDK', '~> 3.5.7'
 #pod 'Parse-iOS-SDK', '~> 1.2.21'
 pod 'SVProgressHUD', '~> 1.0'
 pod 'AFNetworking', '~> 2.4.1'
-pod 'QuickBlox', '~> 2.0.4'
 end
 
 target "WinkTests" do

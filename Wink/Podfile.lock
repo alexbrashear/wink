@@ -24,14 +24,12 @@ PODS:
   - Facebook-iOS-SDK (3.17.0):
     - Bolts
   - HockeySDK (3.5.7)
-  - QuickBlox (2.0.4)
   - SVProgressHUD (1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
   - Facebook-iOS-SDK (~> 3.17.0)
   - HockeySDK (~> 3.5.7)
-  - QuickBlox (~> 2.0.4)
   - SVProgressHUD (~> 1.0)
 
 SPEC CHECKSUMS:
@@ -39,7 +37,6 @@ SPEC CHECKSUMS:
   Bolts: 2635e8698a630774689441047f3465d78c48d485
   Facebook-iOS-SDK: f20274d809f112ba540842e2b6cbe50128d51b7b
   HockeySDK: f0e874d1c6833163ee0c4e423606faf33ad04071
-  QuickBlox: 0f15e6e92aa3c1e9367f7419fa38bd7af040f59e
   SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
 
 COCOAPODS: 0.33.1
