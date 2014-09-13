@@ -57,7 +57,6 @@
 		B3DC9C0319C433E00066DAC0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0219C433E00066DAC0 /* MediaPlayer.framework */; };
 		B3DC9C0519C433E40066DAC0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0419C433E40066DAC0 /* MessageUI.framework */; };
 		B3DC9C0719C433EE0066DAC0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0619C433ED0066DAC0 /* OpenGLES.framework */; };
-		B3DC9C0B19C434690066DAC0 /* MoxtraConversationSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9C0A19C434690066DAC0 /* MoxtraConversationSDK */; };
 		B3DC9C1619C44DA20066DAC0 /* PlaceTheyChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9C1519C44DA20066DAC0 /* PlaceTheyChatTableViewCell.m */; };
 		B3DC9C1919C476190066DAC0 /* PotentialMatchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9C1819C476190066DAC0 /* PotentialMatchTableViewCell.m */; };
 		B3DC9C1C19C4796B0066DAC0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9C1B19C4796B0066DAC0 /* User.m */; };
@@ -138,9 +137,6 @@
 		B3DC9C0219C433E00066DAC0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B3DC9C0419C433E40066DAC0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B3DC9C0619C433ED0066DAC0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		B3DC9C0A19C434690066DAC0 /* MoxtraConversationSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = MoxtraConversationSDK; sourceTree = "<group>"; };
-		B3DC9C0C19C434AF0066DAC0 /* Moxtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Moxtra.h; sourceTree = "<group>"; };
-		B3DC9C0D19C434AF0066DAC0 /* MXClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXClient.h; sourceTree = "<group>"; };
 		B3DC9C1419C44DA20066DAC0 /* PlaceTheyChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceTheyChatTableViewCell.h; sourceTree = "<group>"; };
 		B3DC9C1519C44DA20066DAC0 /* PlaceTheyChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceTheyChatTableViewCell.m; sourceTree = "<group>"; };
 		B3DC9C1719C476190066DAC0 /* PotentialMatchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotentialMatchTableViewCell.h; sourceTree = "<group>"; };
@@ -184,7 +180,6 @@
 				B3DC9BEF19C433930066DAC0 /* AddressBookUI.framework in Frameworks */,
 				B3DC9BEB19C4338C0066DAC0 /* Accelerate.framework in Frameworks */,
 				B38AD39219C3C09000EF0C8E /* libz.dylib in Frameworks */,
-				B3DC9C0B19C434690066DAC0 /* MoxtraConversationSDK in Frameworks */,
 				B3DC9BE919C433820066DAC0 /* libxml2.2.dylib in Frameworks */,
 				B3DC9BE719C4337D0066DAC0 /* libstdc++.6.dylib in Frameworks */,
 				B3DC9BE519C433760066DAC0 /* libc++.dylib in Frameworks */,
@@ -327,9 +322,6 @@
 		BEE5AEB9AE504FAEA5E99A2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3DC9C0C19C434AF0066DAC0 /* Moxtra.h */,
-				B3DC9C0D19C434AF0066DAC0 /* MXClient.h */,
-				B3DC9C0A19C434690066DAC0 /* MoxtraConversationSDK */,
 				B3DC9C0619C433ED0066DAC0 /* OpenGLES.framework */,
 				B3DC9C0419C433E40066DAC0 /* MessageUI.framework */,
 				B3DC9C0219C433E00066DAC0 /* MediaPlayer.framework */,
