@@ -32,6 +32,7 @@
 		B38AD3A519C3C28E00EF0C8E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD3A319C3C28E00EF0C8E /* Parse.framework */; };
 		B38AD3A619C3C28E00EF0C8E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD3A419C3C28E00EF0C8E /* ParseFacebookUtils.framework */; };
 		B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */; };
+		B3DC9BB219C3DFFE0066DAC0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		B38AD3A419C3C28E00EF0C8E /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWinkViewController.h; sourceTree = "<group>"; };
 		B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWinkViewController.m; sourceTree = "<group>"; };
+		B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		D577372847554456997CFCEB /* libPods-Wink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DC9BB219C3DFFE0066DAC0 /* CoreBluetooth.framework in Frameworks */,
 				B38AD3A219C3C0EB00EF0C8E /* UIKit.framework in Frameworks */,
 				B38AD39C19C3C0A800EF0C8E /* SystemConfiguration.framework in Frameworks */,
 				B38AD3A019C3C0E000EF0C8E /* Foundation.framework in Frameworks */,
@@ -191,6 +194,7 @@
 		BEE5AEB9AE504FAEA5E99A2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */,
 				B38AD3A319C3C28E00EF0C8E /* Parse.framework */,
 				B38AD3A419C3C28E00EF0C8E /* ParseFacebookUtils.framework */,
 				B38AD3A119C3C0EB00EF0C8E /* UIKit.framework */,

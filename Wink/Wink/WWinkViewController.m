@@ -7,6 +7,7 @@
 //
 
 #import "WWinkViewController.h"
+#import <CoreBluetooth/CoreBluetooth.h>
 
 @implementation WWinkViewController
 
