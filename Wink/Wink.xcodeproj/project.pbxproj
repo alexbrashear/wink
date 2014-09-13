@@ -33,6 +33,9 @@
 		B38AD3A619C3C28E00EF0C8E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD3A419C3C28E00EF0C8E /* ParseFacebookUtils.framework */; };
 		B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */; };
 		B3DC9BB219C3DFFE0066DAC0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */; };
+		C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BC419C3DC4D009678B1 /* EditViewController.m */; };
+		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
+		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,12 @@
 		B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWinkViewController.h; sourceTree = "<group>"; };
 		B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWinkViewController.m; sourceTree = "<group>"; };
 		B3DC9BB119C3DFFE0066DAC0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C3867BC319C3DC4D009678B1 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		C3867BC419C3DC4D009678B1 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		C3867BC919C3DD01009678B1 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
+		C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
+		C3867BCC19C3E08F009678B1 /* ProfilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilesTableViewController.h; sourceTree = "<group>"; };
+		C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilesTableViewController.m; sourceTree = "<group>"; };
 		D577372847554456997CFCEB /* libPods-Wink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -185,6 +194,12 @@
 		B3DC9BAD19C3DBA70066DAC0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C3867BCC19C3E08F009678B1 /* ProfilesTableViewController.h */,
+				C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */,
+				C3867BC919C3DD01009678B1 /* ChatTableViewController.h */,
+				C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */,
+				C3867BC319C3DC4D009678B1 /* EditViewController.h */,
+				C3867BC419C3DC4D009678B1 /* EditViewController.m */,
 				B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */,
 				B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */,
 			);
@@ -353,7 +368,10 @@
 				B34FEA7219C3BC1200886727 /* WelcomeViewController.m in Sources */,
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
+				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
 				B38AD38719C3BE3C00EF0C8E /* WConstants.m in Sources */,
+				C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */,
+				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
 				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
