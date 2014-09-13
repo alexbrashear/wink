@@ -31,6 +31,7 @@
 		B38AD3A219C3C0EB00EF0C8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD3A119C3C0EB00EF0C8E /* UIKit.framework */; };
 		B38AD3A519C3C28E00EF0C8E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD3A319C3C28E00EF0C8E /* Parse.framework */; };
 		B38AD3A619C3C28E00EF0C8E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38AD3A419C3C28E00EF0C8E /* ParseFacebookUtils.framework */; };
+		B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		B38AD3A119C3C0EB00EF0C8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B38AD3A319C3C28E00EF0C8E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B38AD3A419C3C28E00EF0C8E /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWinkViewController.h; sourceTree = "<group>"; };
+		B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWinkViewController.m; sourceTree = "<group>"; };
 		D577372847554456997CFCEB /* libPods-Wink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +138,7 @@
 		B34FEA6819C3BC1200886727 /* Wink */ = {
 			isa = PBXGroup;
 			children = (
+				B3DC9BAD19C3DBA70066DAC0 /* ViewControllers */,
 				B38AD38619C3BE3C00EF0C8E /* WConstants.m */,
 				B38AD38819C3BE5100EF0C8E /* WConstants.h */,
 				B34FEA6D19C3BC1200886727 /* AppDelegate.h */,
@@ -173,6 +177,15 @@
 				B34FEA8419C3BC1300886727 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3DC9BAD19C3DBA70066DAC0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */,
+				B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		BEE5AEB9AE504FAEA5E99A2E /* Frameworks */ = {
@@ -337,6 +350,7 @@
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				B38AD38719C3BE3C00EF0C8E /* WConstants.m in Sources */,
+				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
