@@ -36,6 +36,9 @@
 		B3DC9BB619C3E2A50066DAC0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC9BB519C3E2A50066DAC0 /* CoreTelephony.framework */; };
 		B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B38AD38619C3BE3C00EF0C8E /* WConstants.m */; };
 		B3DC9BD319C3F3B70066DAC0 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BC419C3DC4D009678B1 /* EditViewController.m */; };
+		B3DC9BD619C406770066DAC0 /* PlaceTheyChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BD519C406770066DAC0 /* PlaceTheyChatTableViewController.m */; };
+		B3DC9BDA19C407DA0066DAC0 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BD919C407DA0066DAC0 /* ChatTableViewCell.m */; };
+		B3DC9BDE19C40AE30066DAC0 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9BDD19C40AE30066DAC0 /* Message.m */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
 		C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */; };
@@ -90,6 +93,12 @@
 		B3DC9BB319C3E2A00066DAC0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		B3DC9BB519C3E2A50066DAC0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B3DC9BC319C3E5EE0066DAC0 /* wink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wink-Prefix.pch"; sourceTree = "<group>"; };
+		B3DC9BD419C406770066DAC0 /* PlaceTheyChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceTheyChatTableViewController.h; sourceTree = "<group>"; };
+		B3DC9BD519C406770066DAC0 /* PlaceTheyChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceTheyChatTableViewController.m; sourceTree = "<group>"; };
+		B3DC9BD819C407DA0066DAC0 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		B3DC9BD919C407DA0066DAC0 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		B3DC9BDC19C40AE30066DAC0 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		B3DC9BDD19C40AE30066DAC0 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		C3867BC319C3DC4D009678B1 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		C3867BC419C3DC4D009678B1 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		C3867BC919C3DD01009678B1 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
@@ -163,6 +172,8 @@
 		B34FEA6819C3BC1200886727 /* Wink */ = {
 			isa = PBXGroup;
 			children = (
+				B3DC9BDB19C40ACC0066DAC0 /* Models */,
+				B3DC9BD719C4067C0066DAC0 /* Views */,
 				C3867BCF19C3E28E009678B1 /* Page View */,
 				B3DC9BAD19C3DBA70066DAC0 /* ViewControllers */,
 				B38AD38619C3BE3C00EF0C8E /* WConstants.m */,
@@ -213,12 +224,32 @@
 				C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */,
 				C3867BC919C3DD01009678B1 /* ChatTableViewController.h */,
 				C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */,
+				B3DC9BD419C406770066DAC0 /* PlaceTheyChatTableViewController.h */,
+				B3DC9BD519C406770066DAC0 /* PlaceTheyChatTableViewController.m */,
 				C3867BC319C3DC4D009678B1 /* EditViewController.h */,
 				C3867BC419C3DC4D009678B1 /* EditViewController.m */,
 				B3DC9BAE19C3DBC50066DAC0 /* WWinkViewController.h */,
 				B3DC9BAF19C3DBC50066DAC0 /* WWinkViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B3DC9BD719C4067C0066DAC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC9BD819C407DA0066DAC0 /* ChatTableViewCell.h */,
+				B3DC9BD919C407DA0066DAC0 /* ChatTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B3DC9BDB19C40ACC0066DAC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC9BDC19C40AE30066DAC0 /* Message.h */,
+				B3DC9BDD19C40AE30066DAC0 /* Message.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		BEE5AEB9AE504FAEA5E99A2E /* Frameworks */ = {
@@ -393,16 +424,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
+				B3DC9BD619C406770066DAC0 /* PlaceTheyChatTableViewController.m in Sources */,
 				B3DC9BD319C3F3B70066DAC0 /* EditViewController.m in Sources */,
 				B3DC9BD219C3F38F0066DAC0 /* WConstants.m in Sources */,
 				B34FEA7219C3BC1200886727 /* WelcomeViewController.m in Sources */,
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
+				B3DC9BDA19C407DA0066DAC0 /* ChatTableViewCell.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
 				C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */,
 				C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
+				B3DC9BDE19C40AE30066DAC0 /* Message.m in Sources */,
 				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
