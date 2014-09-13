@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlaceTheyChatTableViewController : UITableViewController
-
+@interface PlaceTheyChatTableViewController : UIViewController
+@property NSString *sender;
+@property NSString *recipient;
+@property NSString *senderId;
+@property NSString *recipientId;
+@property NSString *createdAt;
 @end

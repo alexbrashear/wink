@@ -12,6 +12,9 @@
 @property NSString *content;
 @property NSString *sender;
 @property NSString *recipient;
+@property NSString *senderId;
+@property NSString *recipientId;
 @property NSString *createdAt;
 @property NSString *messageId;
+@property NSString *combinedId;
 @end
