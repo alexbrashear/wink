@@ -36,6 +36,8 @@
 		C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BC419C3DC4D009678B1 /* EditViewController.m */; };
 		C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */; };
 		C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */; };
+		C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */; };
+		C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3867BD419C3E31F009678B1 /* PageContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,10 @@
 		C3867BCA19C3DD01009678B1 /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
 		C3867BCC19C3E08F009678B1 /* ProfilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilesTableViewController.h; sourceTree = "<group>"; };
 		C3867BCD19C3E08F009678B1 /* ProfilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilesTableViewController.m; sourceTree = "<group>"; };
+		C3867BD019C3E2E2009678B1 /* OnBoardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewController.h; sourceTree = "<group>"; };
+		C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingViewController.m; sourceTree = "<group>"; };
+		C3867BD319C3E31F009678B1 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		C3867BD419C3E31F009678B1 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		D577372847554456997CFCEB /* libPods-Wink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,6 +156,7 @@
 		B34FEA6819C3BC1200886727 /* Wink */ = {
 			isa = PBXGroup;
 			children = (
+				C3867BCF19C3E28E009678B1 /* Page View */,
 				B3DC9BAD19C3DBA70066DAC0 /* ViewControllers */,
 				B38AD38619C3BE3C00EF0C8E /* WConstants.m */,
 				B38AD38819C3BE5100EF0C8E /* WConstants.h */,
@@ -228,6 +235,17 @@
 				D577372847554456997CFCEB /* libPods-Wink.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3867BCF19C3E28E009678B1 /* Page View */ = {
+			isa = PBXGroup;
+			children = (
+				C3867BD019C3E2E2009678B1 /* OnBoardingViewController.h */,
+				C3867BD119C3E2E2009678B1 /* OnBoardingViewController.m */,
+				C3867BD319C3E31F009678B1 /* PageContentViewController.h */,
+				C3867BD419C3E31F009678B1 /* PageContentViewController.m */,
+			);
+			name = "Page View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,8 +387,10 @@
 				B34FEA6F19C3BC1200886727 /* AppDelegate.m in Sources */,
 				B34FEA6C19C3BC1200886727 /* main.m in Sources */,
 				C3867BCE19C3E08F009678B1 /* ProfilesTableViewController.m in Sources */,
+				C3867BD219C3E2E2009678B1 /* OnBoardingViewController.m in Sources */,
 				B38AD38719C3BE3C00EF0C8E /* WConstants.m in Sources */,
 				C3867BC519C3DC4D009678B1 /* EditViewController.m in Sources */,
+				C3867BD519C3E31F009678B1 /* PageContentViewController.m in Sources */,
 				C3867BCB19C3DD01009678B1 /* ChatTableViewController.m in Sources */,
 				B3DC9BB019C3DBC50066DAC0 /* WWinkViewController.m in Sources */,
 			);
