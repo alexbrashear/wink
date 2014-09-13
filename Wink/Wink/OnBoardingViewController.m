@@ -23,8 +23,10 @@
     
     // Create the data model
     _pageTitles = @[@"edit", @"wink", @"chat"];
-    
-    _pageViewControllers = @[];
+    WWinkViewController *mainViewController = [[WWinkViewController alloc] init];
+    EditViewController *leftViewController = [[EditViewController alloc] init];
+    ChatTableViewController *rightViewController = [[ChatTableViewController alloc] init];
+    _pageViewControllers = @[leftViewController, mainViewController, rightViewController];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
@@ -50,15 +52,9 @@
         return nil;
     }
     
-    /*
-     if (index == -1)
-     [self togglePageControl:YES];
-     else
-     [self togglePageControl:NO];
-     */
     // Create a new view controller and pass suitable data.
-    PSPageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
-    pageContentViewController.imageFile = self.pageImages[index];
+    PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
+    pageContentViewController.currentPageViewController = self.pageViewControllers[index];
     pageContentViewController.titleText = self.pageTitles[index];
     pageContentViewController.pageIndex = index;
     
@@ -81,8 +77,7 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     
-    NSUInteger index = ((PSPageContentViewController*) viewController).pageIndex;
-    self.pageControl.currentPage = index;
+    NSUInteger index = ((PageContentViewController*) viewController).pageIndex;
     
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
@@ -96,8 +91,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSUInteger index = ((PSPageContentViewController*) viewController).pageIndex;
-    self.pageControl.currentPage = index;
+    NSUInteger index = ((PageContentViewController*) viewController).pageIndex;
     
     if (index == NSNotFound) {
         return nil;
